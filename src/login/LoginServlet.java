@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import DBconnect.DBconnect;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 /**
  * Servlet implementation class LoginServlet
  */
@@ -23,13 +24,14 @@ public class LoginServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
     
-    boolean loginCL(String user, String pawd){
-    	boolean ret = true;
+    boolean loginCL(String user, String pawd) throws SQLException{
+    	boolean ret = false;
     	DBconnect connector = new DBconnect();
     	connector.connect();
     	ResultSet res = connector.query("SELECT * FROM user WHERE user_id="+user+" AND password="+pawd+";");
-    	if(res==null){
-    		ret = false;
+    	if(res.next()){
+    		System.out.println(res.getString("user_id")+" login!");
+    		ret = true;
     	}
     	connector.close();
     	System.out.println(ret);
@@ -44,10 +46,15 @@ public class LoginServlet extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		if(loginCL(username,password)){ 
-			response.sendRedirect("ui.jsp");
-		}else{
-			response.sendRedirect("index.jsp");
+		try {
+			if(loginCL(username,password)){ 
+				response.sendRedirect("ui.jsp");
+			}else{
+				response.sendRedirect("index.jsp");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
