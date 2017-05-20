@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DBconnect {
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver"; 
-	static final String DB_URL = "jdbc:mysql://localhost:3306/db-book?useSSL=true";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/library?useSSL=true";
 	static final String USER = "root";
 	static final String PASS = "2507630";
 	

@@ -27,11 +27,12 @@ public class LoginServlet extends HttpServlet {
     	boolean ret = true;
     	DBconnect connector = new DBconnect();
     	connector.connect();
-    	ResultSet res = connector.query("SELECT * FROM login WHERE userid="+user+" AND password="+pawd+";");
+    	ResultSet res = connector.query("SELECT * FROM user WHERE user_id="+user+" AND password="+pawd+";");
     	if(res==null){
     		ret = false;
     	}
     	connector.close();
+    	System.out.println(ret);
     	return ret;
     }
     
