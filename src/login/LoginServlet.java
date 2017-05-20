@@ -6,7 +6,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import DBconnect.DBconnect;
+import java.sql.ResultSet;
 /**
  * Servlet implementation class LoginServlet
  */
@@ -21,7 +22,19 @@ public class LoginServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
+    
+    boolean loginCL(String user, String pawd){
+    	boolean ret = true;
+    	DBconnect connector = new DBconnect();
+    	connector.connect();
+    	ResultSet res = connector.query("SELECT * FROM login WHERE userid="+user+" AND password="+pawd+";");
+    	if(res==null){
+    		ret = false;
+    	}
+    	connector.close();
+    	return ret;
+    }
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -30,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		if(username.equals("a") && password.equals("a")){
+		if(loginCL(username,password)){ 
 			response.sendRedirect("ui.jsp");
 		}else{
 			response.sendRedirect("index.jsp");
