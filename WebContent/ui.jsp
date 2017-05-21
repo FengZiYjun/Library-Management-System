@@ -13,20 +13,26 @@
 	<h3 class="am-article-title blog-title">
 		<a href="#">Personal information</a>
 	</h3>
-	
-	<form class="am-form am-form-horizontal" >
+
+	<form class="am-form am-form-horizontal">
 		<div class="am-form-group">
-		<jsp:useBean id="person" scope="session" class="personalInfo.person"/>
+			<label for="user-name" class="am-u-sm-3 am-form-label"> User ID:
+				<%=request.getAttribute("id") %>
+			</label><br>
 			<label for="user-name" class="am-u-sm-3 am-form-label"> Name:
-				
-			<% if(person.getUserName()==null){
-				String id = (String)request.getAttribute("id");
-				System.out.println("request:" + id);
-				person.get(id);	
-			}%>
-			<%=person.getUserName() %> 
+				<jsp:useBean id="person" scope="session" class="personalInfo.person" />
+				<%
+					if (person.getUserName() == null) {
+						String id = (String) request.getAttribute("id");
+						System.out.println("request:" + id);
+						person.get(id);
+					}
+				%> <%=person.getUserName()%>
+			</label><br>
+			<label for="user-name" class="am-u-sm-3 am-form-label"> Email:
+				 <%=person.getUserEmail()%>
 			</label>
-			
+
 		</div>
 
 		<!-- future features -->
