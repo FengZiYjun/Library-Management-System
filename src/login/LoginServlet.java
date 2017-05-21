@@ -34,7 +34,6 @@ public class LoginServlet extends HttpServlet {
     		ret = true;
     	}
     	connector.close();
-    	System.out.println(ret);
     	return ret;
     }
     
@@ -48,7 +47,9 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		try {
 			if(loginCL(username,password)){ 
-				response.sendRedirect("ui.jsp");
+				//response.sendRedirect("ui.jsp");
+				request.setAttribute("id", username);
+				request.getRequestDispatcher("/ui.jsp").forward(request, response);
 			}else{
 				response.sendRedirect("index.jsp");
 			}

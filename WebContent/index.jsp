@@ -55,9 +55,9 @@
 			</div>
 			<br> <br>
 			<form action="LoginServlet" method="post" class="am-form">
-				<label for="text">name:</label> <input type="text" name="username">
+				<label for="text">Your user ID:</label> <input type="text" name="username">
 				<br/>
-				<label for="password">password:</label> <input type="text"
+				<label for="password">Password:</label> <input type="text"
 					name="password" /> 
 				<br/>
 				<input type="submit" value="submit" />

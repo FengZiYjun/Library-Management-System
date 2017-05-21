@@ -42,7 +42,7 @@ public class DBconnect {
 			e.printStackTrace();
 		}
 			
-		System.out.println("Executing query...");
+		System.out.println("Executing query:\n  "+sql);
 		try {
 			res = stmt.executeQuery(sql);
 		} catch (SQLException e) {
@@ -63,4 +63,28 @@ public class DBconnect {
 		}
     }
     
+    public static void main(String[] args) {
+    	/*
+    	DBconnect con = new DBconnect();
+    	con.connect();
+    	ResultSet ret  = con.query("SELECT * FROM user WHERE user_id=001 AND password=2507630;");
+    	try{
+    		System.out.println(ret.getString("user_name"));
+    	}catch(SQLException e){
+    		System.out.println("shit");
+    	}
+    	con.close();*/
+    	DBconnect connector = new DBconnect();
+    	connector.connect();
+    	ResultSet res = connector.query("SELECT * FROM user WHERE user_id=001 AND password=2507630;");
+    	try {
+			if(res.next()){
+				System.out.println(res.getString("user_name"));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	connector.close();
+    }
 }

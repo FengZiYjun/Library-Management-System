@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>personalInfo</servlet-name>
+        <servlet-class>personalInfo.personalInfo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>personalInfo</servlet-name>
+        <url-pattern>/personalInfo</url-pattern>
+    </servlet-mapping>
+</web-app>
