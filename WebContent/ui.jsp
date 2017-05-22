@@ -6,9 +6,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;">
+
 <title>user interface</title>
 </head>
 <body>
+   
+ 
 	<br>
 	<h3 class="am-article-title blog-title">
 		<a href="#">Personal information</a>
