@@ -37,11 +37,11 @@
 			<ul
 				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
 				<li><a href="javascript:;"><span class="am-icon-envelope-o"></span>
-						收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
+						Massage <span class="am-badge am-badge-warning">5</span></a></li>
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="javascript:;"> <span class="am-icon-users"></span> 管理员 <span
-						class="am-icon-caret-down"></span>
+					href="javascript:;"> <span class="am-icon-users"></span> Logout
+						<span class="am-icon-caret-down"></span>
 				</a>
 					<ul class="am-dropdown-content">
 						<li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
@@ -51,125 +51,135 @@
 					</ul></li>
 				<li class="am-hide-sm-only"><a href="javascript:;"
 					id="admin-fullscreen"><span class="am-icon-arrows-alt"></span>
-						<span class="admin-fullText">开启全屏</span></a></li>
+						<span class="admin-fullText">Full Screen</span></a></li>
 			</ul>
 		</div>
 	</header>
 
-	<div class="am-cf admin-main">
 
-		<!-- content start -->
-		<div class="admin-content">
-			<div class="admin-content-body">
-				<div class="am-cf am-padding am-padding-bottom-0">
-					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">My Library</strong> / <small>form</small>
-					</div>
-				</div>
+	<!-- content start -->
 
-				<hr>
+	<div class="admin-content-body">
+		<div class="am-cf am-padding am-padding-bottom-0">
+			<div class="am-fl am-cf">
+				<strong class="am-text-primary am-text-lg">My Library</strong> / <small>form</small>
+			</div>
+		</div>
 
-				<div class="am-tabs am-margin" data-am-tabs="">
-					<ul class="am-tabs-nav am-nav am-nav-tabs">
-						<li class="am-active"><a href="#tab1">Basic Info</a></li>
-						<li><a href="#tab2">Books</a></li>
-						<li><a href="#tab3">Advanced</a></li>
-					</ul>
+		<hr>
 
-					<div class="am-tabs-bd">
-						<div class="am-tab-panel am-fade am-in am-active" id="tab1">
-							<div class="am-g am-margin-top">
-								<div class="am-u-sm-4 am-u-md-2 am-text-right"></div>
+		<div class="am-tabs am-margin" data-am-tabs="">
+			<ul class="am-tabs-nav am-nav am-nav-tabs">
+				<li class="am-active"><a href="#tab1">Basic Info</a></li>
+				<li><a href="#tab2">Books</a></li>
+				<li><a href="#tab3">Advanced</a></li>
+			</ul>
 
-								<table
-									class="am-table am-table-bd am-table-striped admin-content-table">
-									<tbody>
-										<tr>
+			<div class="am-tabs-bd">
+				<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+					<div class="am-g am-margin-top">
+						<div class="am-u-sm-4 am-u-md-2 am-text-left"></div>
 
-											<td>User ID</td>
-											<td>001</td>
-										</tr>
-										<tr>
+						<jsp:useBean id="person" scope="session"
+							class="personalInfo.person" />
+						<table
+							class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
 
-											<td>User Name</td>
-											<td>Tom</td>
+							<tbody>
+								<tr>
 
-										</tr>
-										<tr>
+									<td>User ID</td>
+									<td><%
+										if (person.getUserID() == null) {
+											String id = (String) request.getAttribute("id");
+											person.get(id);
+										} else {
+									%> <%=person.getUserID()%> <%
+ 	}
+ %></td>
+								</tr>
+								<tr>
 
-											<td>Email</td>
-											<td>tom@qq.com</td>
+									<td>User Name</td>
+									<td><%=person.getUserName()%></td>
 
-										</tr>
-										<tr>
-											<td>Telephone</td>
-											<td>911</td>
+								</tr>
+								<tr>
 
-										</tr>
-									</tbody>
-								</table>
+									<td>Email</td>
+									<td><%=person.getUserEmail()%></td>
+
+								</tr>
+								<tr>
+									<td>Telephone</td>
+									<td>(empty)</td>
+
+								</tr>
+							</tbody>
+						</table>
 
 
 
-								<div class="am-tab-panel am-fade" id="tab3">
-									<form class="am-form">
-										<div class="am-g am-margin-top-sm">
-											<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 标题</div>
-											<div class="am-u-sm-8 am-u-md-4 am-u-end">
-												<input type="text" class="am-input-sm">
-											</div>
-										</div>
-
-										<div class="am-g am-margin-top-sm">
-											<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 关键字</div>
-											<div class="am-u-sm-8 am-u-md-4 am-u-end">
-												<input type="text" class="am-input-sm">
-											</div>
-										</div>
-
-										<div class="am-g am-margin-top-sm">
-											<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 描述</div>
-											<div class="am-u-sm-8 am-u-md-4 am-u-end">
-												<textarea rows="4"></textarea>
-											</div>
-										</div>
-									</form>
+						<div class="am-tab-panel am-fade" id="tab3">
+							<form class="am-form">
+								<div class="am-g am-margin-top-sm">
+									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 标题</div>
+									<div class="am-u-sm-8 am-u-md-4 am-u-end">
+										<input type="text" class="am-input-sm">
+									</div>
 								</div>
 
-							</div>
+								<div class="am-g am-margin-top-sm">
+									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 关键字</div>
+									<div class="am-u-sm-8 am-u-md-4 am-u-end">
+										<input type="text" class="am-input-sm">
+									</div>
+								</div>
+
+								<div class="am-g am-margin-top-sm">
+									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 描述</div>
+									<div class="am-u-sm-8 am-u-md-4 am-u-end">
+										<textarea rows="4"></textarea>
+									</div>
+								</div>
+							</form>
 						</div>
 
-						<div class="am-margin">
-							<button type="button" class="am-btn am-btn-primary am-btn-xs">Change Personal Info</button>
-						</div>
 					</div>
-
-					<footer class="admin-content-footer">
-						<hr>
-					</footer>
 				</div>
-				<!-- content end -->
 
+				<div class="am-margin">
+					<button type="button" class="am-btn am-btn-primary am-btn-xs">Change
+						Personal Info</button>
+				</div>
 			</div>
 
-			<a href="#"
-				class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
-				data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
-
-			<footer>
+			<footer class="admin-content-footer">
 				<hr>
 			</footer>
+		</div>
+		<!-- content end -->
 
-			<!--[if lt IE 9]>
+	</div>
+
+	<a href="#"
+		class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
+		data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+
+	<footer>
+		<hr>
+	</footer>
+
+	<!--[if lt IE 9]>
 <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 
-			<!--[if (gte IE 9)|!(IE)]><!-->
-			<script src="assets/js/jquery.min.js"></script>
-			<!--<![endif]-->
-			<script src="assets/js/amazeui.min.js"></script>
-			<script src="assets/js/app.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<script src="assets/js/jquery.min.js"></script>
+	<!--<![endif]-->
+	<script src="assets/js/amazeui.min.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>

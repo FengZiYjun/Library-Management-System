@@ -42,6 +42,10 @@ public class person {
 		con.close();
 	}
 	
+	public String getUserID(){
+		return user_id;
+	}
+	
 	public String getUserName(){
 		return user_name;
 	}
