@@ -70,8 +70,9 @@
 
 		<div class="am-tabs am-margin" data-am-tabs="">
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
-				<li class="am-active"><a href="#tab1">Basic Info</a></li>
-				<li><a href="#tab2">Books</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">
+				Basic Info</a></li>
+				<li class="am-active"><a href="http://localhost:8080/LibraryManageSystem/ui_test.jsp">Books</a></li>
 				<li><a href="#tab3">Advanced</a></li>
 			</ul>
 
@@ -93,10 +94,8 @@
 										if (person.getUserID() == null) {
 											String id = (String) request.getAttribute("id");
 											person.get(id);
-										} else {
-									%> <%=person.getUserID()%> <%
- 	}
- %></td>
+										}%> 
+										<%=person.getUserID()%></td>
 								</tr>
 								<tr>
 
