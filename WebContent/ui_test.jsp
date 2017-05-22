@@ -70,14 +70,14 @@
 
 		<div class="am-tabs am-margin" data-am-tabs="">
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
-				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">
-						Basic Info</a></li>
-				<li class="am-active"><a
-					href="http://localhost:8080/LibraryManageSystem/ui_test.jsp">Books</a></li>
-				<li><a href="#tab3">Advanced</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic Info</a></li>
+				<li class="am-active"><a>Books</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/Advanced.jsp">Advanced</a></li>
 			</ul>
-
-			<a href="#" class="am-btn am-btn-primary am-active" role="button">Loan</a><br>
+			<br>
+			<a href="#" class="am-btn am-btn-primary am-active" role="button">Loan</a>
+			<a href="#" class="am-btn am-btn-primary" role="button">History</a><br>
+			<br>
 			<div class="am-scrollable-horizontal">
 			<table
 				class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
@@ -114,32 +114,6 @@
 					
 				</tbody>
 			</table>
-			</div>
-
-
-			<div class="am-tab-panel am-fade" id="tab3">
-				<form class="am-form">
-					<div class="am-g am-margin-top-sm">
-						<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 标题</div>
-						<div class="am-u-sm-8 am-u-md-4 am-u-end">
-							<input type="text" class="am-input-sm">
-						</div>
-					</div>
-
-					<div class="am-g am-margin-top-sm">
-						<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 关键字</div>
-						<div class="am-u-sm-8 am-u-md-4 am-u-end">
-							<input type="text" class="am-input-sm">
-						</div>
-					</div>
-
-					<div class="am-g am-margin-top-sm">
-						<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 描述</div>
-						<div class="am-u-sm-8 am-u-md-4 am-u-end">
-							<textarea rows="4"></textarea>
-						</div>
-					</div>
-				</form>
 			</div>
 
 		</div>
