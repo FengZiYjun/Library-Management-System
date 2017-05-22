@@ -71,95 +71,93 @@
 		<div class="am-tabs am-margin" data-am-tabs="">
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
 				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">
-				Basic Info</a></li>
-				<li class="am-active"><a href="http://localhost:8080/LibraryManageSystem/ui_test.jsp">Books</a></li>
+						Basic Info</a></li>
+				<li class="am-active"><a
+					href="http://localhost:8080/LibraryManageSystem/ui_test.jsp">Books</a></li>
 				<li><a href="#tab3">Advanced</a></li>
 			</ul>
 
-			<div class="am-tabs-bd">
-				<div class="am-tab-panel am-fade am-in am-active" id="tab1">
-					<div class="am-g am-margin-top">
-						<div class="am-u-sm-4 am-u-md-2 am-text-left"></div>
-
-						<jsp:useBean id="person" scope="session"
-							class="personalInfo.person" />
-						<table
-							class="am-table am-table-bd am-table-bdrs am-table-striped am-table-hover">
-
-							<tbody>
-								<tr>
-
-									<td>User ID</td>
-									<td><%
-										if (person.getUserID() == null) {
-											String id = (String) request.getAttribute("id");
-											person.get(id);
-										}%> 
-										<%=person.getUserID()%></td>
-								</tr>
-								<tr>
-
-									<td>User Name</td>
-									<td><%=person.getUserName()%></td>
-
-								</tr>
-								<tr>
-
-									<td>Email</td>
-									<td><%=person.getUserEmail()%></td>
-
-								</tr>
-								<tr>
-									<td>Telephone</td>
-									<td>(empty)</td>
-
-								</tr>
-							</tbody>
-						</table>
-
-
-
-						<div class="am-tab-panel am-fade" id="tab3">
-							<form class="am-form">
-								<div class="am-g am-margin-top-sm">
-									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 标题</div>
-									<div class="am-u-sm-8 am-u-md-4 am-u-end">
-										<input type="text" class="am-input-sm">
-									</div>
-								</div>
-
-								<div class="am-g am-margin-top-sm">
-									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 关键字</div>
-									<div class="am-u-sm-8 am-u-md-4 am-u-end">
-										<input type="text" class="am-input-sm">
-									</div>
-								</div>
-
-								<div class="am-g am-margin-top-sm">
-									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 描述</div>
-									<div class="am-u-sm-8 am-u-md-4 am-u-end">
-										<textarea rows="4"></textarea>
-									</div>
-								</div>
-							</form>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="am-margin">
-					<button type="button" class="am-btn am-btn-primary am-btn-xs">Change
-						Personal Info</button>
-				</div>
+			<a href="#" class="am-btn am-btn-primary am-active" role="button">Loan</a><br>
+			<div class="am-scrollable-horizontal">
+			<table
+				class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
+				<thead>
+					<tr>
+						<th>Book ID</th>
+						<th>Title</th>
+						<th>BorrowTime</th>
+						<th>Author</th>
+						<th>Publisher</th>
+						<th>PublishYear</th>
+						<th>Tag</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>10001</td>
+						<td>MY BOOK</td>
+						<td>2017/5/22</td>
+						<td>John Bean</td>
+						<td>Sun</td>
+						<td>2014</td>
+						<td>History</td>
+					</tr>
+					<tr>
+						<td>10001</td>
+						<td>MY BOOK</td>
+						<td>2017/5/22</td>
+						<td>John Bean</td>
+						<td>Sun</td>
+						<td>2014</td>
+						<td>History</td>
+					</tr>
+					
+				</tbody>
+			</table>
 			</div>
 
-			<footer class="admin-content-footer">
-				<hr>
-			</footer>
-		</div>
-		<!-- content end -->
 
+			<div class="am-tab-panel am-fade" id="tab3">
+				<form class="am-form">
+					<div class="am-g am-margin-top-sm">
+						<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 标题</div>
+						<div class="am-u-sm-8 am-u-md-4 am-u-end">
+							<input type="text" class="am-input-sm">
+						</div>
+					</div>
+
+					<div class="am-g am-margin-top-sm">
+						<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 关键字</div>
+						<div class="am-u-sm-8 am-u-md-4 am-u-end">
+							<input type="text" class="am-input-sm">
+						</div>
+					</div>
+
+					<div class="am-g am-margin-top-sm">
+						<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 描述</div>
+						<div class="am-u-sm-8 am-u-md-4 am-u-end">
+							<textarea rows="4"></textarea>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
 	</div>
+
+	<div class="am-margin">
+		<button type="button" class="am-btn am-btn-primary am-btn-xs">Change
+			Personal Info</button>
+	</div>
+
+
+	<footer class="admin-content-footer">
+		<hr>
+	</footer>
+
+	<!-- content end -->
+
+
 
 	<a href="#"
 		class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"

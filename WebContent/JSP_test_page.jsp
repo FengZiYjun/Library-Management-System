@@ -7,14 +7,43 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Unit Test</title>
 </head>
-<jsp:useBean id="person" scope="session" class="personalInfo.person" />
+
 <body>
-	<%
-		if (person.getUserName() == null) {
-			person.get("001");
-		}
-	%>
-	<%=person.getUserName()%>
+	<table
+		class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
+		<thead>
+			<tr>
+				<th>Book ID</th>
+				<th>Title</th>
+				<th>BorrowTime</th>
+				<th>Author</th>
+				<th>Publisher</th>
+				<th>PublishYear</th>
+				<th>Tag</th>
+			</tr>
+		</thead>
+		<tbody>
+			<%
+				int i = 0;
+			%>
+			<%
+				for (; i < 10; i++) {
+			%>
+			<%
+				out.println(
+							"<tr><td>10001</td><td>MY BOOK</td><td>2017/5/22</td>"+
+							"<td>John Bean</td><td>Sun</td><td>2014</td><td>History</td></tr>");
+				}
+			%>
+			
+
+			
+
+		</tbody>
+	</table>
+
+
+
 	<%-- 
 			    abc.connectDB();
 			    //ResultSet rs = abc.query("SELECT * FROM classroom;");
