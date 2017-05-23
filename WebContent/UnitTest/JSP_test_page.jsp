@@ -17,28 +17,45 @@
 				<th>Title</th>
 				<th>BorrowTime</th>
 				<th>Author</th>
+				<th>Tag</th>
 				<th>Publisher</th>
 				<th>PublishYear</th>
-				<th>Tag</th>
+				<th>ISBN</th>
+				<th>call_number</th>
 			</tr>
 		</thead>
+		<jsp:useBean id="loan" scope="session" class="loan.LoanBean" />
 		<tbody>
 			<%
-				int i = 0;
-			%>
-			<%
-				for (; i < 10; i++) {
-			%>
-			<%
-				out.println(
-							"<tr><td>10001</td><td>MY BOOK</td><td>2017/5/22</td>"+
-							"<td>John Bean</td><td>Sun</td><td>2014</td><td>History</td></tr>");
+				if(loan.isLoaded==false){
+					loan.setBookInfo();
 				}
+				int rows = loan.getRowNum();
+				String[][] books = loan.getBookInfo();
+				for (int i=0; i < rows; i++) {
+				String[] book = books[i];
 			%>
-			
-
-			
-
+			<%
+				out.print("<tr><td>");
+				out.print(book[0]);
+				out.print("</td><td>");
+				out.print(book[1]);
+				out.print("</td><td>");
+				out.print(book[2]);
+				out.print("</td><td>");
+				out.print(book[3]);
+				out.print("</td><td>");
+				out.print(book[4]);
+				out.print("</td><td>");
+				out.print(book[5]);
+				out.print("</td><td>");
+				out.print(book[6]);
+				out.print("</td><td>");
+				out.print(book[7]);
+				out.print("</td><td>");
+				out.print(book[8]);
+				out.print("</td></tr>");
+			}%>
 		</tbody>
 	</table>
 

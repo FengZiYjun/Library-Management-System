@@ -70,59 +70,71 @@
 
 		<div class="am-tabs am-margin" data-am-tabs="">
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
-				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic Info</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic
+						Info</a></li>
 				<li class="am-active"><a>Books</a></li>
-				<li><a href="http://localhost:8080/LibraryManageSystem/Advanced.jsp">Advanced</a></li>
+				<li><a
+					href="http://localhost:8080/LibraryManageSystem/Advanced.jsp">Advanced</a></li>
 			</ul>
-			<br>
-			<a href="#" class="am-btn am-btn-primary am-active" role="button">Loan</a>
-			<a href="#" class="am-btn am-btn-primary" role="button">History</a><br>
-			<br>
+			<br> <a href="#" class="am-btn am-btn-primary am-active"
+				role="button">Loan</a> <a href="#" class="am-btn am-btn-primary"
+				role="button">History</a><br> <br>
 			<div class="am-scrollable-horizontal">
-			<table
-				class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
-				<thead>
-					<tr>
-						<th>Book ID</th>
-						<th>Title</th>
-						<th>BorrowTime</th>
-						<th>Author</th>
-						<th>Publisher</th>
-						<th>PublishYear</th>
-						<th>Tag</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>10001</td>
-						<td>MY BOOK</td>
-						<td>2017/5/22</td>
-						<td>John Bean</td>
-						<td>Sun</td>
-						<td>2014</td>
-						<td>History</td>
-					</tr>
-					<tr>
-						<td>10001</td>
-						<td>MY BOOK</td>
-						<td>2017/5/22</td>
-						<td>John Bean</td>
-						<td>Sun</td>
-						<td>2014</td>
-						<td>History</td>
-					</tr>
-					
-				</tbody>
-			</table>
+				<table
+					class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
+					<thead>
+						<tr>
+							<th>Book ID</th>
+							<th>Title</th>
+							<th>BorrowTime</th>
+							<th>Author</th>
+							<th>Tag</th>
+							<th>Publisher</th>
+							<th>PublishYear</th>
+							<th>ISBN</th>
+							<th>call_number</th>
+						</tr>
+					</thead>
+					<jsp:useBean id="loan" scope="session" class="loan.LoanBean" />
+					<tbody>
+						<%
+							if (loan.isLoaded == false) {
+								loan.setBookInfo();
+							}
+							int rows = loan.getRowNum();
+							String[][] books = loan.getBookInfo();
+							for (int i = 0; i < rows; i++) {
+								String[] book = books[i];
+						%>
+						<%
+							out.print("<tr><td>");
+								out.print(book[0]);
+								out.print("</td><td>");
+								out.print(book[1]);
+								out.print("</td><td>");
+								out.print(book[2]);
+								out.print("</td><td>");
+								out.print(book[3]);
+								out.print("</td><td>");
+								out.print(book[4]);
+								out.print("</td><td>");
+								out.print(book[5]);
+								out.print("</td><td>");
+								out.print(book[6]);
+								out.print("</td><td>");
+								out.print(book[7]);
+								out.print("</td><td>");
+								out.print(book[8]);
+								out.print("</td></tr>");
+							}
+						%>
+					</tbody>
+				</table>
 			</div>
 
 		</div>
 	</div>
 
-	<div class="am-margin">
-		<button type="button" class="am-btn am-btn-primary am-btn-xs">Change
-			Personal Info</button>
-	</div>
 
 
 	<footer class="admin-content-footer">

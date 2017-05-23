@@ -75,7 +75,7 @@
 			</ul>
 
 			<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
-			<br>
+
         <li><a href="#" class="am-text-success"><span class=" am-icon-book am-icon-sm"></span><br>All Books<br></a></li>
         <li><a href="#" class="am-text-warning"><span class=" am-icon-search am-icon-sm"></span><br>Search<br></a></li>
         <li><a href="#" class="am-text-danger"><span class=" am-icon-magic am-icon-sm"></span><br>Recommendation<br></a></li>

@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//WebContent/Advanced.jsp=UTF-8
+encoding//WebContent/UnitTest/ui_test.jsp=UTF-8
+encoding//WebContent/bookInfo.jsp=UTF-8
 encoding//WebContent/index.jsp=UTF-8
 encoding//WebContent/ui.jsp=UTF-8
-encoding//WebContent/ui_test.jsp=UTF-8

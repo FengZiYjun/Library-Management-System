@@ -1,38 +1,59 @@
 package loan;
 
-import java.awt.print.Book;
-import java.sql.Array;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Iterator;
-import java.util.List;
 import DBconnect.DBconnect;
 
 public class LoanBean {
 	
-	public boolean isLoaded = false;
+	
 	private String[][] BookInfo;
+	private int row_num = 0;
+	
+	public boolean isLoaded = false;
 	
 	public LoanBean(){
 		
 	}
-
-
+	
+	public int getRowNum(){
+		return row_num;
+	}
+	
+	public String[][] getBookInfo(){
+		return BookInfo;
+	}
 
 	public void setBookInfo() {
-		isLoaded = true;
+		this.isLoaded = true;
 		DBconnect con = new DBconnect();
 		con.connect();
-		ResultSet res = con.query("");
+		String sql = "SELECT book_id, title, borrow_time, author, tag, publisher, publish_year, ISBN, call_number" + 
+		" FROM book NATURAL JOIN loan WHERE user_id = '001'";
+		ResultSet res = con.query(sql);
 		try {
-			int row_num = 0;  // how to get the number of rows using gdbc?
-			int col_num = 0;  // the number of attributes is hard coded
+			
+			/*
+			 * try this 
+			 */
+			while(res.next()){
+				this.row_num++;
+			}
+			res.beforeFirst();
+			
+			int col_num = 9;  // the number of attributes is hard coded
 			BookInfo = new String[row_num][col_num];
 			for(int i=0;res.next();i++){
-				for(int j=0;j<col_num;j++){
-					BookInfo[i][j] = res.getNString("book_id");
-					// .... 
-				}
+					// Here this can be improved by abstraction. 
+					BookInfo[i][0] = res.getNString("book_id");
+					BookInfo[i][1] = res.getNString("title");
+					BookInfo[i][2] = res.getNString("borrow_time");
+					BookInfo[i][3] = res.getNString("author");
+					BookInfo[i][4] = res.getNString("tag");
+					BookInfo[i][5] = res.getNString("publisher");
+					BookInfo[i][6] = res.getNString("publish_year");
+					BookInfo[i][7] = res.getNString("ISBN");
+					BookInfo[i][8] = res.getNString("call_number");
 				
 			}
 		} catch (SQLException e) {
