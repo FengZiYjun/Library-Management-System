@@ -65,19 +65,24 @@
 				<strong class="am-text-primary am-text-lg">My Library</strong> / <small>form</small>
 			</div>
 		</div>
-
 		<hr>
 
 		<div class="am-tabs am-margin" data-am-tabs="">
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
-				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic
-						Info</a></li>
-				<li><a
-					href="http://localhost:8080/LibraryManageSystem/ui_test.jsp">Books</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic Info</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/ui_test.jsp">Books</a></li>
 				<li class="am-active"><a>Advanced</a></li>
 			</ul>
 
-
+			<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
+			<br>
+        <li><a href="#" class="am-text-success"><span class=" am-icon-book am-icon-sm"></span><br>All Books<br></a></li>
+        <li><a href="#" class="am-text-warning"><span class=" am-icon-search am-icon-sm"></span><br>Search<br></a></li>
+        <li><a href="#" class="am-text-danger"><span class=" am-icon-magic am-icon-sm"></span><br>Recommendation<br></a></li>
+      	
+      </ul>
+		<br>
+			</div>
 
 			<footer class="admin-content-footer">
 				<hr>
@@ -85,7 +90,6 @@
 		</div>
 		<!-- content end -->
 
-	</div>
 
 	<a href="#"
 		class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
