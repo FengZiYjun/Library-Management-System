@@ -37,9 +37,6 @@
 					href="javascript:;"> <span class="am-icon-users"></span> Logout
 				</a>
 					</li>
-				<li class="am-hide-sm-only"><a href="javascript:;"
-					id="admin-fullscreen"><span class="am-icon-arrows-alt"></span>
-						<span class="admin-fullText">Full Screen</span></a></li>
 			</ul>
 		</div>
 	</header>

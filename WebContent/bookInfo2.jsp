@@ -63,8 +63,8 @@
 				<li><a
 					href="http://localhost:8080/LibraryManageSystem/Advanced.jsp">Advanced</a></li>
 			</ul>
-			<br> <a class="am-btn am-btn-primary am-active"
-				role="button">Loan</a> <a href="http://localhost:8080/LibraryManageSystem/bookInfo2.jsp" class="am-btn am-btn-primary"
+			<br> <a href="http://localhost:8080/LibraryManageSystem/bookInfo.jsp" class="am-btn am-btn-primary "
+				role="button">Loan</a> <a  class="am-btn am-btn-primary am-active"
 				role="button">History</a><br> <br>
 			<div class="am-scrollable-horizontal">
 				<table
@@ -73,24 +73,25 @@
 						<tr>
 							<th>Book ID</th>
 							<th>Title</th>
-							<th>BorrowTime</th>
+							<th>Borrow Time</th>
+							<th>Return Time</th>
 							<th>Author</th>
 							<th>Tag</th>
 							<th>Publisher</th>
-							<th>PublishYear</th>
-							<th>ISBN</th>
-							<th>call_number</th>
+							<th>Publish Year</th>
+							<th>Call Number</th>
 						</tr>
 					</thead>
 					<jsp:useBean id="person" scope="session" class="personalInfo.person" />
-					<jsp:useBean id="loan" scope="session" class="loan.LoanBean" />
+					<jsp:useBean id="history" scope="session" class="history.HistoryBean" />
 					<tbody>
 						<%
-							if (loan.isLoaded == false) {
-								loan.setBookInfo(person.getUserID());
+							if (history.isLoaded == false) {
+								//history.setBookInfo(person.getUserID());
+								history.setBookInfo("002");
 							}
-							int rows = loan.getRowNum();
-							String[][] books = loan.getBookInfo();
+							int rows = history.getRowNum();
+							String[][] books = history.getBookInfo();
 							for (int i = 0; i < rows; i++) {
 								String[] book = books[i];
 						%>

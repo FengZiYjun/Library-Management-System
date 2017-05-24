@@ -36,9 +36,6 @@
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
 					href="javascript:;"> <span class="am-icon-users"></span> Logout
 				</a>
-				<li class="am-hide-sm-only"><a href="javascript:;"
-					id="admin-fullscreen"><span class="am-icon-arrows-alt"></span>
-						<span class="admin-fullText">Full Screen</span></a></li>
 			</ul>
 		</div>
 	</header>
@@ -101,33 +98,6 @@
 								</tr>
 							</tbody>
 						</table>
-
-
-
-						<div class="am-tab-panel am-fade" id="tab3">
-							<form class="am-form">
-								<div class="am-g am-margin-top-sm">
-									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 标题</div>
-									<div class="am-u-sm-8 am-u-md-4 am-u-end">
-										<input type="text" class="am-input-sm">
-									</div>
-								</div>
-
-								<div class="am-g am-margin-top-sm">
-									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 关键字</div>
-									<div class="am-u-sm-8 am-u-md-4 am-u-end">
-										<input type="text" class="am-input-sm">
-									</div>
-								</div>
-
-								<div class="am-g am-margin-top-sm">
-									<div class="am-u-sm-4 am-u-md-2 am-text-right">SEO 描述</div>
-									<div class="am-u-sm-8 am-u-md-4 am-u-end">
-										<textarea rows="4"></textarea>
-									</div>
-								</div>
-							</form>
-						</div>
 
 					</div>
 				</div>
