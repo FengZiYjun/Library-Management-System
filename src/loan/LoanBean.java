@@ -6,7 +6,7 @@ import DBconnect.DBconnect;
 
 public class LoanBean {
 	
-	
+	private String user_id;
 	private String[][] BookInfo;
 	private int row_num = 0;
 	
@@ -23,13 +23,19 @@ public class LoanBean {
 	public String[][] getBookInfo(){
 		return BookInfo;
 	}
+	
+	public void setUserID(String id){
+		this.user_id = id;
+	}
 
-	public void setBookInfo() {
+	public void setBookInfo(String id) {
 		this.isLoaded = true;
+		setUserID(id);
+		
 		DBconnect con = new DBconnect();
 		con.connect();
 		String sql = "SELECT book_id, title, borrow_time, author, tag, publisher, publish_year, ISBN, call_number" + 
-		" FROM book NATURAL JOIN loan WHERE user_id = '001'";
+		" FROM book NATURAL JOIN loan WHERE user_id ='" + user_id + "';";
 		ResultSet res = con.query(sql);
 		try {
 			

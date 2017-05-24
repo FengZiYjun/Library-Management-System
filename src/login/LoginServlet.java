@@ -43,12 +43,12 @@ public class LoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		String username = request.getParameter("username");
+		String user_id = request.getParameter("username");
 		String password = request.getParameter("password");
 		try {
-			if(loginCL(username,password)){ 
+			if(loginCL(user_id,password)){ 
 				//response.sendRedirect("ui.jsp");
-				request.setAttribute("id", username);
+				request.setAttribute("id", user_id);
 				request.getRequestDispatcher("/ui.jsp").forward(request, response);
 			}else{
 				response.sendRedirect("index.jsp");

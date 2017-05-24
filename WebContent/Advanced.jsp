@@ -26,12 +26,6 @@
 			<strong>Library</strong> <small>Lux Lebertas</small>
 		</div>
 
-		<button
-			class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
-			data-am-collapse="{target: '#topbar-collapse'}">
-			<span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span>
-		</button>
-
 		<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
 
 			<ul
@@ -41,14 +35,8 @@
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
 					href="javascript:;"> <span class="am-icon-users"></span> Logout
-						<span class="am-icon-caret-down"></span>
 				</a>
-					<ul class="am-dropdown-content">
-						<li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
-						<li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-						<li><a href="#"><span class="am-icon-power-off"></span>
-								退出</a></li>
-					</ul></li>
+					</li>
 				<li class="am-hide-sm-only"><a href="javascript:;"
 					id="admin-fullscreen"><span class="am-icon-arrows-alt"></span>
 						<span class="admin-fullText">Full Screen</span></a></li>
@@ -70,10 +58,10 @@
 		<div class="am-tabs am-margin" data-am-tabs="">
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
 				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic Info</a></li>
-				<li><a href="http://localhost:8080/LibraryManageSystem/ui_test.jsp">Books</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/bookInfo.jsp">Books</a></li>
 				<li class="am-active"><a>Advanced</a></li>
 			</ul>
-
+			<br>
 			<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
 
         <li><a href="#" class="am-text-success"><span class=" am-icon-book am-icon-sm"></span><br>All Books<br></a></li>
