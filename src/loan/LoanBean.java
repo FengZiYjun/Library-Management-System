@@ -6,14 +6,25 @@ import DBconnect.DBconnect;
 
 public class LoanBean {
 	
-	private String user_id;
-	private String[][] BookInfo;
-	private int row_num = 0;
+	static private String user_id;
+	static private String[][] BookInfo;
+	static private int row_num = 0;
 	
-	public boolean isLoaded = false;
+	private static boolean isLoaded = false;
 	
 	public LoanBean(){
 		
+	}
+	
+	public boolean isLoaded(){
+		return isLoaded;
+	}
+	
+	public static void clear(){
+		user_id = null;
+		BookInfo = null;
+		row_num = 0;
+		isLoaded = false;
 	}
 	
 	public int getRowNum(){
@@ -25,11 +36,11 @@ public class LoanBean {
 	}
 	
 	public void setUserID(String id){
-		this.user_id = id;
+		user_id = id;
 	}
 
 	public void setBookInfo(String id) {
-		this.isLoaded = true;
+		isLoaded = true;
 		setUserID(id);
 		
 		DBconnect con = new DBconnect();
@@ -43,7 +54,7 @@ public class LoanBean {
 			 * try this 
 			 */
 			while(res.next()){
-				this.row_num++;
+				row_num++;
 			}
 			res.beforeFirst();
 			

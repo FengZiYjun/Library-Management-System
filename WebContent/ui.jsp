@@ -34,7 +34,7 @@
 						Massage <span class="am-badge am-badge-warning">5</span></a></li>
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="javascript:;"> <span class="am-icon-users"></span> Logout
+					href="http://localhost:8080/LibraryManageSystem/LogoutServlet"> <span class="am-icon-users"></span> Logout
 				</a>
 			</ul>
 		</div>

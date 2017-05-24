@@ -3,18 +3,30 @@ package history;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 import DBconnect.DBconnect;
 
 public class HistoryBean {
 
-	private String user_id;
-	private String[][] BookInfo;
-	private int row_num = 0;
+	static private String user_id;
+	static private String[][] BookInfo;
+	static private int row_num = 0;
 	
-	public boolean isLoaded = false;
+	private static boolean isLoaded = false;
 	
 	public HistoryBean(){
 		
+	}
+	
+	public boolean isLoaded(){
+		return isLoaded;
+	}
+	
+	public static void clear(){
+		user_id = null;
+		BookInfo = null;
+		row_num = 0;
+		isLoaded = false;
 	}
 	
 	public int getRowNum(){
@@ -26,14 +38,14 @@ public class HistoryBean {
 	}
 	
 	public void setUserID(String id){
-		this.user_id = id;
+		user_id = id;
 	}
 
 	/*
 	 * user_id needed to call this function
 	 */
 	public void setBookInfo(String id) {
-		this.isLoaded = true;
+		isLoaded = true;
 		setUserID(id);
 		
 		DBconnect con = new DBconnect();
@@ -47,7 +59,7 @@ public class HistoryBean {
 			 * try this 
 			 */
 			while(res.next()){
-				this.row_num++;
+				row_num++;
 			}
 			res.beforeFirst();
 			
