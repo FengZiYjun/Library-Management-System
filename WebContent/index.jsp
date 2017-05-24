@@ -32,10 +32,9 @@
 <body>
 	<div class="header">
 		<div class="am-g">
-			<h1>Web ide</h1>
+			<h1>LIBERTAS</h1>
 			<p>
-				Integrated Development Environment<br />A Unique Library Management
-				System
+				Ultra-light Book Management<br />just as it has always been
 			</p>
 		</div>
 		<hr />
@@ -54,13 +53,14 @@
 			</div>
 			<br> <br>
 			<form action="LoginServlet" method="post" class="am-form">
-				<label for="text">Your user ID:</label> <input type="text" name="username">
-				<br/>
-				<label for="password">Password:</label> <input type="text"
-					name="password" /> 
-				<br/>
-				<input type="submit" value="submit" />
+				<label for="text">Your user ID:</label> <input type="text"
+					name="username"> <br /> <label for="password">Password:</label>
+				<input type="text" name="password" /> 
+				 <br>  <input type="submit" value="login" class="am-btn am-btn-primary am-btn-sm am-fl"/>
 			</form>
+			<br> 
+			<hr>
+			<p>@ 2014 AllMobilize, Inc. Licensed under MIT license.</p>
 		</div>
 	</div>
 </body>
