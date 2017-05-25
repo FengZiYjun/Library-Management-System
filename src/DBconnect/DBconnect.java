@@ -52,6 +52,29 @@ public class DBconnect {
 		return res;
     }
     
+    /*
+     * SQL for insert, delete and update
+     */
+    public int update(String sql){
+    	
+    	int ret = 0;
+    	System.out.println("Creating statement...");
+		try {
+			stmt = con.createStatement();
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
+		
+		System.out.println("Executing query:\n  "+sql);
+		try {
+			ret = stmt.executeUpdate(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return ret;
+    }
+    
     
     // close all connections
     public void close(){

@@ -32,7 +32,7 @@
 				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="javascript:;"> <span class="am-icon-users"></span> Logout
+					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span class="am-icon-users"></span> Logout
 						<span class="am-icon-caret-down"></span>
 				</a></li>
 			</ul>
@@ -44,7 +44,7 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span>Front
+					<li><a href="admin-index.html"><span class="am-icon-home"></span> Front
 							Page</a></li>
 					<li class="admin-parent"><a class="am-cf"
 						data-am-collapse="{target: '#collapse-nav'}"><span

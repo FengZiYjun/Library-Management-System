@@ -32,7 +32,7 @@
 				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="javascript:;"> <span class="am-icon-users"></span> Logout
+					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span class="am-icon-users"></span> Logout
 						<span class="am-icon-caret-down"></span>
 				</a></li>
 			</ul>
@@ -44,7 +44,7 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span>Front
+					<li><a href="admin-index.html"><span class="am-icon-home"></span> Front
 							Page</a></li>
 					<li class="admin-parent"><a class="am-cf"
 						data-am-collapse="{target: '#collapse-nav'}"><span
@@ -102,7 +102,7 @@
 								<label for="user-name" class="am-u-sm-3 am-form-label">Book
 									ID/ </label>
 								<div class="am-u-sm-9">
-									<input type="number" pattern="[0-9]*" id="book_id"
+									<input type="number" pattern="[0-9]*" name="book_id"
 										placeholder="Book ID "> <small>The unique book
 										identity number.</small>
 								</div>
@@ -112,7 +112,7 @@
 								<label for="user-email" class="am-u-sm-3 am-form-label">Title/
 								</label>
 								<div class="am-u-sm-9">
-									<input type="text" id="title" placeholder="Title"> <small></small>
+									<input type="text" name="title" placeholder="Title"> <small></small>
 								</div>
 							</div>
 
@@ -120,7 +120,7 @@
 								<label for="user-phone" class="am-u-sm-3 am-form-label">Author/
 								</label>
 								<div class="am-u-sm-9">
-									<input type="text" id="author" placeholder="Author">
+									<input type="text" name="author" placeholder="Author">
 								</div>
 							</div>
 
@@ -128,7 +128,7 @@
 								<label for="user-QQ" class="am-u-sm-3 am-form-label">Publisher/
 								</label>
 								<div class="am-u-sm-9">
-									<input type="text" id="publisher" placeholder="Enter Publisher">
+									<input type="text" name="publisher" placeholder="Enter Publisher">
 								</div>
 							</div>
 
@@ -136,7 +136,7 @@
 								<label for="user-weibo" class="am-u-sm-3 am-form-label">Publish_Year/
 								</label>
 								<div class="am-u-sm-9">
-									<input type="text" id="publish_year" placeholder="Publish Year">
+									<input type="text" name="publish_year" placeholder="Publish Year">
 								</div>
 							</div>
 
@@ -144,7 +144,7 @@
 								<label for="user-weibo" class="am-u-sm-3 am-form-label">ISBN/
 								</label>
 								<div class="am-u-sm-9">
-									<input type="text" id="ISBN" placeholder="ISBN">
+									<input type="text" name="ISBN" placeholder="ISBN">
 								</div>
 							</div>
 
@@ -152,7 +152,7 @@
 								<label for="user-weibo" class="am-u-sm-3 am-form-label">Call
 									Num/ </label>
 								<div class="am-u-sm-9">
-									<input type="text" id="call_number" placeholder="Call Number">
+									<input type="text" name="call_number" placeholder="Call Number">
 								</div>
 							</div>
 
@@ -177,7 +177,7 @@
 
 							<div class="am-form-group">
 								<div class="am-u-sm-9 am-u-sm-push-3">
-									<button type="submit" class="am-btn am-btn-primary">Confirm</button>
+									<input type="submit" class="am-btn am-btn-primary" value="Confirm" />
 								</div>
 							</div>
 						</form>

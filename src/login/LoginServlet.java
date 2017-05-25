@@ -48,7 +48,7 @@ public class LoginServlet extends HttpServlet {
 		try {
 			if(loginCL(user_id,password)){ 
 				// need to improve to support more administrators
-				if(user_id == "000"){
+				if(user_id.equals("000")){
 					request.getRequestDispatcher("/administrator.jsp").forward(request, response);
 				}else{
 					request.setAttribute("id", user_id);
