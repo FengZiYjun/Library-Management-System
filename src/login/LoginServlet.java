@@ -15,7 +15,7 @@ import java.sql.SQLException;
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -47,9 +47,13 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		try {
 			if(loginCL(user_id,password)){ 
-				//response.sendRedirect("ui.jsp");
-				request.setAttribute("id", user_id);
-				request.getRequestDispatcher("/ui.jsp").forward(request, response);
+				// need to improve to support more administrators
+				if(user_id == "000"){
+					request.getRequestDispatcher("/administrator.jsp").forward(request, response);
+				}else{
+					request.setAttribute("id", user_id);
+					request.getRequestDispatcher("/ui.jsp").forward(request, response);
+				}
 			}else{
 				response.sendRedirect("index.jsp");
 			}
