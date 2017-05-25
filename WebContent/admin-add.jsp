@@ -16,10 +16,6 @@
 <link rel="stylesheet" href="assets/css/admin.css">
 </head>
 <body>
-	<!--[if lte IE 9]>
-<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
-  以获得更好的体验！</p>
-<![endif]-->
 
 	<header class="am-topbar am-topbar-inverse admin-header">
 		<div class="am-topbar-brand">
@@ -32,8 +28,9 @@
 				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span class="am-icon-users"></span> Logout
-						<span class="am-icon-caret-down"></span>
+					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span
+						class="am-icon-users"></span> Logout <span
+						class="am-icon-caret-down"></span>
 				</a></li>
 			</ul>
 		</div>
@@ -44,8 +41,8 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span> Front
-							Page</a></li>
+					<li><a href="admin-index.html"><span class="am-icon-home"></span>
+							Front Page</a></li>
 					<li class="admin-parent"><a class="am-cf"
 						data-am-collapse="{target: '#collapse-nav'}"><span
 							class="am-icon-file"></span> Operations <span
@@ -54,11 +51,11 @@
 							id="collapse-nav">
 							<li><a href="admin-add.jsp" class="am-cf"><span
 									class="am-icon-plus"></span> Add</a></li>
-							<li><a href="admin-help.html"><span
+							<li><a href="admin-search.jsp"><span
 									class="am-icon-remove"></span> Delete</a></li>
-							<li><a href="admin-gallery.html"><span
+							<li><a href="admin-search.jsp"><span
 									class="am-icon-search"></span> Search </a></li>
-							<li><a href="admin-log.html"><span
+							<li><a href="admin-search.jsp"><span
 									class="am-icon-pencil"></span> Modify </a></li>
 
 						</ul></li>
@@ -97,7 +94,8 @@
 					<div class="am-u-sm-12 am-u-md-4 am-u-md-push-8"></div>
 
 					<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-						<form action="AddServlet" method="post" class="am-form am-form-horizontal">
+						<form action="AddServlet" method="post"
+							class="am-form am-form-horizontal">
 							<div class="am-form-group">
 								<label for="user-name" class="am-u-sm-3 am-form-label">Book
 									ID/ </label>
@@ -128,7 +126,8 @@
 								<label for="user-QQ" class="am-u-sm-3 am-form-label">Publisher/
 								</label>
 								<div class="am-u-sm-9">
-									<input type="text" name="publisher" placeholder="Enter Publisher">
+									<input type="text" name="publisher"
+										placeholder="Enter Publisher">
 								</div>
 							</div>
 
@@ -136,7 +135,8 @@
 								<label for="user-weibo" class="am-u-sm-3 am-form-label">Publish_Year/
 								</label>
 								<div class="am-u-sm-9">
-									<input type="text" name="publish_year" placeholder="Publish Year">
+									<input type="text" name="publish_year"
+										placeholder="Publish Year">
 								</div>
 							</div>
 
@@ -177,7 +177,8 @@
 
 							<div class="am-form-group">
 								<div class="am-u-sm-9 am-u-sm-push-3">
-									<input type="submit" class="am-btn am-btn-primary" value="Confirm" />
+									<input type="submit" class="am-btn am-btn-primary"
+										value="Confirm" />
 								</div>
 							</div>
 						</form>

@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Amaze UI Admin help Examples</title>
-<meta name="description" content="这是一个 help 页面">
+<meta name="description" content="è¿™æ˜¯ä¸€ä¸ª help é¡µé¢">
 <meta name="keywords" content="help">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="renderer" content="webkit">
@@ -16,10 +16,7 @@
 <link rel="stylesheet" href="assets/css/admin.css">
 </head>
 <body>
-	<!--[if lte IE 9]>
-<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
-  以获得更好的体验！</p>
-<![endif]-->
+
 
 	<header class="am-topbar am-topbar-inverse admin-header">
 		<div class="am-topbar-brand">
@@ -32,8 +29,9 @@
 				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span class="am-icon-users"></span> Logout
-						<span class="am-icon-caret-down"></span>
+					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span
+						class="am-icon-users"></span> Logout <span
+						class="am-icon-caret-down"></span>
 				</a></li>
 			</ul>
 		</div>
@@ -44,8 +42,8 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span> Front
-							Page</a></li>
+					<li><a href="admin-index.html"><span class="am-icon-home"></span>
+							Front Page</a></li>
 					<li class="admin-parent"><a class="am-cf"
 						data-am-collapse="{target: '#collapse-nav'}"><span
 							class="am-icon-file"></span> Operations <span
@@ -60,14 +58,8 @@
 									class="am-icon-search"></span> Search </a></li>
 							<li><a href="admin-search.jsp"><span
 									class="am-icon-pencil"></span> Modify </a></li>
-
 						</ul></li>
-
-
-
 				</ul>
-
-
 
 				<div class="am-panel am-panel-default admin-sidebar-panel">
 					<div class="am-panel-bd">
@@ -86,25 +78,81 @@
 			<div class="admin-content-body">
 				<div class="am-cf am-padding am-padding-bottom-0">
 					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">Administrator Page</strong>
+						<strong class="am-text-primary am-text-lg">Result</strong> / <small>Table</small>
 					</div>
 				</div>
 
 				<hr>
 
 				<div class="am-g">
-					<div class="am-u-sm-12 am-u-sm-centered">
-						<h2> </h2>
-						
-						<hr>
+					<div class="am-u-sm-12">
+						<form class="am-form">
+							<table
+								class="am-table am-table-striped am-table-hover table-main">
+								<thead>
+									<tr>
+										<th class="table-check"><input type="checkbox"></th>
+										<th class="table-id">ID</th>
+										<th class="table-title">Title</th>
+										<th class="table-type">Author</th>
+										<th class="table-author am-hide-sm-only">Publisher</th>
+										<th class="table-date am-hide-sm-only">PublishYear</th>
+										<th class="table-set">Tag</th>
+										<th class="table-id">ISBN</th>
+										<th class="table-id">call_number</th>
+
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr>
+										
+
+										<%
+											String[][] book_info = (String[][]) request.getAttribute("book_info");
+											
+											String[] info_name = { "book_id", "publisher", "author", "title", "ISBN", "call_number", "tag",
+													"publish_year" };
+											int row_num = book_info.length;
+											for (int i = 0; i < row_num; i++) { %>
+											
+											<td><input type="checkbox"></td>
+											
+											<%
+												for (int j = 0; j < info_name.length; j++) {
+													out.print("<td>" + book_info[i][j] + "</td>");
+												}
+										%>
+
+										<td>
+											<div class="am-btn-toolbar">
+												<div class="am-btn-group am-btn-group-xs">
+													<button
+														class="am-btn am-btn-default am-btn-xs am-text-secondary">
+														<span class="am-icon-pencil-square-o"></span> modify
+													</button>
+													<button
+														class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only">
+														<span class="am-icon-trash-o"></span> remove
+													</button>
+												</div>
+											</div>
+										</td>
+
+
+									</tr>
+									<%
+										}
+									%>
+
+								</tbody>
+							</table>
+
+							<hr>
+
+						</form>
 					</div>
 
-					<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-						<h3></h3>
-						<p></p>
-						
-						
-					</div>
 				</div>
 			</div>
 
@@ -125,7 +173,7 @@
 
 	<footer>
 		<hr>
-		<p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed under
+		<p class="am-padding-left">@ 2014 AllMobilize, Inc. Licensed under
 			MIT license.</p>
 	</footer>
 
@@ -140,7 +188,5 @@
 	<!--<![endif]-->
 	<script src="assets/js/amazeui.min.js"></script>
 	<script src="assets/js/app.js"></script>
-
-
 </body>
 </html>
