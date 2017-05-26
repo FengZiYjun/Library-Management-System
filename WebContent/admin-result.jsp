@@ -86,7 +86,7 @@
 
 				<div class="am-g">
 					<div class="am-u-sm-12">
-						<form class="am-form">
+						<form class="am-form" action="ModifyServlet" method="post">
 							<table
 								class="am-table am-table-striped am-table-hover table-main">
 								<thead>
@@ -104,18 +104,16 @@
 									</tr>
 								</thead>
 								<tbody>
-
-									<tr>
-										
-
+																
 										<%
 											String[][] book_info = (String[][]) request.getAttribute("book_info");
 											
 											String[] info_name = { "book_id", "publisher", "author", "title", "ISBN", "call_number", "tag",
 													"publish_year" };
 											int row_num = book_info.length;
-											for (int i = 0; i < row_num; i++) { %>
 											
+											for (int i = 0; i < row_num; i++) { %>
+											<tr>
 											<td><input type="checkbox"></td>
 											
 											<%
@@ -127,14 +125,14 @@
 										<td>
 											<div class="am-btn-toolbar">
 												<div class="am-btn-group am-btn-group-xs">
-													<button
+												<input type="hidden" name="signal" value=<%=2*i %> />
+												
+													<input type="submit" value="modify"
 														class="am-btn am-btn-default am-btn-xs am-text-secondary">
-														<span class="am-icon-pencil-square-o"></span> modify
-													</button>
-													<button
+													<hr>
+													<input type="hidden" name="signal" value=<%=(2*i+1) %> />
+													<input type="submit" value="remove"
 														class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only">
-														<span class="am-icon-trash-o"></span> remove
-													</button>
 												</div>
 											</div>
 										</td>
@@ -144,7 +142,7 @@
 									<%
 										}
 									%>
-
+										
 								</tbody>
 							</table>
 

@@ -97,37 +97,7 @@
 					</thead>
 					<jsp:useBean id="loan" scope="session" class="loan.LoanBean" />
 					<tbody>
-						<%
-							if (loan.isLoaded == false) {
-								loan.setBookInfo();
-							}
-							int rows = loan.getRowNum();
-							String[][] books = loan.getBookInfo();
-							for (int i = 0; i < rows; i++) {
-								String[] book = books[i];
-						%>
-						<%
-							out.print("<tr><td>");
-								out.print(book[0]);
-								out.print("</td><td>");
-								out.print(book[1]);
-								out.print("</td><td>");
-								out.print(book[2]);
-								out.print("</td><td>");
-								out.print(book[3]);
-								out.print("</td><td>");
-								out.print(book[4]);
-								out.print("</td><td>");
-								out.print(book[5]);
-								out.print("</td><td>");
-								out.print(book[6]);
-								out.print("</td><td>");
-								out.print(book[7]);
-								out.print("</td><td>");
-								out.print(book[8]);
-								out.print("</td></tr>");
-							}
-						%>
+						
 					</tbody>
 				</table>
 			</div>
