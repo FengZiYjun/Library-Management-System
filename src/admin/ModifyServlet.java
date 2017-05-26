@@ -1,26 +1,23 @@
 package admin;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class ControllerServlet
+ * Servlet implementation class ModifyServlet
  */
-@WebServlet("/ControllerServlet")
-public class ControllerServlet extends HttpServlet {
+@WebServlet("/ModifyServlet")
+public class ModifyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ControllerServlet() {
+    public ModifyServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -31,30 +28,6 @@ public class ControllerServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		String signal = request.getParameter("signal");
-		System.out.println("Controller output signal: " + signal);
-		
-		int s = 0;
-		try{
-			s = Integer.parseInt(signal);
-		}catch(NumberFormatException e){
-			e.getMessage();
-		}
-		
-		int row = s / 2;
-	
-		if(s % 2 == 0){
-			String book_id = ResultBean.get(row);
-			System.out.println("ctrl output book_id: " + book_id);
-			request.setAttribute("book_id", book_id);
-			request.getRequestDispatcher("/admin-modify.jsp").forward(request, response);
-		}else{
-			RequestDispatcher rd = request.getRequestDispatcher("RemoveServlet");
-			HttpSession session = request.getSession(true);
-			session.setAttribute("row", row);
-			rd.forward(request,response);
-		}
-		
 	}
 
 	/**
@@ -62,7 +35,17 @@ public class ControllerServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String book_id = request.getParameter("book_id");
+		String publisher = request.getParameter("publisher");
+		String author = request.getParameter("author");
+		String title = request.getParameter("title");
+		String ISBN = request.getParameter("ISBN");
+		String call_number = request.getParameter("call_number");
+		String tag = request.getParameter("tag");
+		String publish_year = request.getParameter("publish_year");
+		
+		
+		
 	}
 
 }

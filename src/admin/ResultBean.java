@@ -18,6 +18,14 @@ public class ResultBean {
 		}
 	}
 	
+	public String getRow(int i){
+		if(0<=i && i <books_id.size()){
+			return books_id.get(i);
+		}else{
+			return null;
+		}
+	}
+	
 	public static void clear(){
 		books_id.clear();
 	}
