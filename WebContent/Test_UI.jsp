@@ -86,77 +86,59 @@
 
 				<div class="am-g">
 					<div class="am-u-sm-12">
-					
-							<table
-								class="am-table am-table-striped am-table-hover table-main">
-								<thead>
-									<tr>
-										<th class="table-check"><input type="checkbox"></th>
-										<th class="table-id">ID</th>
-										<th class="table-title">Title</th>
-										<th class="table-type">Author</th>
-										<th class="table-author am-hide-sm-only">Publisher</th>
-										<th class="table-date am-hide-sm-only">PublishYear</th>
-										<th class="table-set">Tag</th>
-										<th class="table-id">ISBN</th>
-										<th class="table-id">call_number</th>
 
-									</tr>
-								</thead>
-								<tbody>
-																
-										<%
-											String[][] book_info = (String[][]) request.getAttribute("book_info");
-											
-											String[] info_name = { "book_id", "publisher", "author", "title", "ISBN", "call_number", "tag",
-													"publish_year" };
-											int row_num = book_info.length;
-											
-											for (int i = 0; i < row_num; i++) { %>
-											<tr>
-											<td><input type="checkbox"></td>
-											
-											<%
-												for (int j = 0; j < info_name.length; j++) {
-													out.print("<td>" + book_info[i][j] + "</td>");
-												}
-										%>
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th>
+									<th class="table-id">ID</th>
+									<th class="table-title">Title</th>
+									<th class="table-type">Author</th>
+									<th class="table-author am-hide-sm-only">Publisher</th>
+									<th class="table-date am-hide-sm-only">PublishYear</th>
+									<th class="table-set">Tag</th>
+									<th class="table-id">ISBN</th>
+									<th class="table-id">call_number</th>
 
-										<td>
-												
-											<% char name =  (char)(i + 65); %>
-											<form class="am-form" method="post" name="<%=name%>">
-											<input type="hidden" name="signal" value="<%=2*i %>" /> <input
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<td>
+									
+									
+
+										<form class="am-form" method="post" name="a">
+											<input type="hidden" name="signal" value="2" /> <input
 												type="button" value="modify"
 												class="am-btn am-btn-default am-btn-xs am-text-secondary"
-												onclick="<%=name%>.action='ControllerServlet';<%=name%>.submit();" />
+												onclick="a.action='ControllerServlet';a.submit();" />
 										</form>
 
-										<% char nameb =  (char)(i + 105); %>
-										<form class="am-form" method="post" name="<%=nameb%>">
-											<input type="hidden" name="signal" value="<%=(2*i+1) %>" /> <input
+										<form class="am-form" method="post" name="b">
+											<input type="hidden" name="signal" value="3" /> <input
 												type="button" value="remove"
 												class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"
-												onclick="<%=nameb%>.action='ControllerServlet';<%=nameb%>.submit();" />
+												onclick="b.action='ControllerServlet';b.submit();" />
 										</form>
-										
-										</td>
+									
+									
+									
+									</td>
+								</tr>
 
+							</tbody>
+						</table>
 
-									</tr>
-									<%
-										}
-									%>
-										
-								</tbody>
-							</table>
-
-							<hr>
+						<hr>
 
 					</div>
 
 				</div>
 			</div>
+
 
 			<footer class="admin-content-footer">
 				<hr>

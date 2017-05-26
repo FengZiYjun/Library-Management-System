@@ -115,6 +115,7 @@
 											for (int i = 0; i < row_num; i++) { %>
 											<tr>
 											<td><input type="checkbox"></td>
+											<% System.out.println(i); %>
 											
 											<%
 												for (int j = 0; j < info_name.length; j++) {

@@ -1,6 +1,7 @@
 package admin;
 
 import java.io.IOException;
+import admin.ResultBean;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -78,6 +79,9 @@ public class SearchServlet extends HttpServlet {
 			String[][] book_info = new String[row_num][col_num];
 			
 			for(int i=0;res.next();i++){
+				// load book_id into ResultBean
+				ResultBean.set(res.getString("book_id"));
+				
 				for(int j=0;j<col_num;j++){
 					book_info[i][j] = res.getString(info_name[j]);
 				}
