@@ -8,7 +8,7 @@ import DBconnect.DBconnect;
 public class ModifyBean {
 	
 	private boolean isLoead = false;
-	private String book_id;
+	private static String book_id;
 	private static String[] info_name = {"publisher","author", "title", "ISBN", "call_number", "tag", "publish_year"};
 	private static String[] book_info = new String[info_name.length];
 	
@@ -18,6 +18,10 @@ public class ModifyBean {
 	
 	public void set(String id){
 		book_id = id;
+	}
+	
+	public String getID(){
+		return book_id;
 	}
 	
 	public void loadBookInfo(){

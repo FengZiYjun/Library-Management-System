@@ -7,12 +7,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import DBconnect.DBconnect;
+
 /**
  * Servlet implementation class ModifyServlet
  */
 @WebServlet("/ModifyServlet")
 public class ModifyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
+	private static String[] info_name = {"publisher","author", "title", "ISBN", "call_number", "tag", "publish_year"};
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -34,17 +38,37 @@ public class ModifyServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		String book_id = request.getParameter("book_id");
-		String publisher = request.getParameter("publisher");
-		String author = request.getParameter("author");
-		String title = request.getParameter("title");
-		String ISBN = request.getParameter("ISBN");
-		String call_number = request.getParameter("call_number");
-		String tag = request.getParameter("tag");
-		String publish_year = request.getParameter("publish_year");
 		
+		ModifyBean bean = new ModifyBean();
 		
+		String set = "SET";
+		for(int i=0;i<info_name.length;i++){
+			String old_value = bean.getBookInfo(info_name[i]);
+			String new_value = request.getParameter(info_name[i]);
+			if(!old_value.equals(new_value)){
+				if(!set.equals("SET")){
+					set = set + ",";
+				}
+				set = set + " " + info_name[i] + "='" + new_value + "'";
+			}
+		}
+		
+		// there are changes
+		if(!set.equals("SET")){
+
+			String where = " WHERE book_id='" + bean.getID() + "';";
+			String sql = "UPDATE book " + set + where;
+			
+			DBconnect con = new DBconnect();
+			con.connect();
+			int ret = con.update(sql);
+			if(ret > 0){
+				System.out.println("successfully modify!");
+			}
+			con.close();
+		}
+		
+		response.sendRedirect("administrator.jsp");
 		
 	}
 
