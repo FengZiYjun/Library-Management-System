@@ -32,15 +32,16 @@ public class RemoveServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		HttpSession session = request.getSession(true);
-		String r = (String) session.getAttribute("row");
-		int row = Integer.parseInt(r);
+		int row = (int) session.getAttribute("row");
 		
 		String book_id = ResultBean.get(row);
+		System.out.println(book_id);
+		
 		ResultBean.clear();
 		
 		DBconnect con = new DBconnect();
 		con.connect();
-		String sql = "DELETE FROM book WHERE book_id='" + book_id + "';";
+		String sql = "DELETE FROM book where  book_id='" + book_id + "';";
 		con.update(sql);
 		con.close();
 		

@@ -86,7 +86,7 @@
 
 				<div class="am-g">
 					<div class="am-u-sm-12">
-						<form class="am-form" action="ModifyServlet" method="post">
+					
 							<table
 								class="am-table am-table-striped am-table-hover table-main">
 								<thead>
@@ -115,6 +115,7 @@
 											for (int i = 0; i < row_num; i++) { %>
 											<tr>
 											<td><input type="checkbox"></td>
+											<% System.out.println(i); %>
 											
 											<%
 												for (int j = 0; j < info_name.length; j++) {
@@ -123,18 +124,23 @@
 										%>
 
 										<td>
-											<div class="am-btn-toolbar">
-												<div class="am-btn-group am-btn-group-xs">
-												<input type="hidden" name="signal" value=<%=2*i %> />
 												
-													<input type="submit" value="modify"
-														class="am-btn am-btn-default am-btn-xs am-text-secondary">
-													<hr>
-													<input type="hidden" name="signal" value=<%=(2*i+1) %> />
-													<input type="submit" value="remove"
-														class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only">
-												</div>
-											</div>
+											<% char name =  (char)(i + 65); %>
+											<form class="am-form" method="post" name="<%=name%>">
+											<input type="hidden" name="signal" value="<%=2*i %>" /> <input
+												type="button" value="modify"
+												class="am-btn am-btn-default am-btn-xs am-text-secondary"
+												onclick="<%=name%>.action='ControllerServlet';<%=name%>.submit();" />
+										</form>
+
+										<% char nameb =  (char)(i + 105); %>
+										<form class="am-form" method="post" name="<%=nameb%>">
+											<input type="hidden" name="signal" value="<%=(2*i+1) %>" /> <input
+												type="button" value="remove"
+												class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"
+												onclick="<%=nameb%>.action='ControllerServlet';<%=nameb%>.submit();" />
+										</form>
+										
 										</td>
 
 
@@ -148,7 +154,6 @@
 
 							<hr>
 
-						</form>
 					</div>
 
 				</div>

@@ -32,7 +32,8 @@ public class ControllerServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		String signal = request.getParameter("signal");
-		System.out.println(signal);
+		System.out.println("Controller output signal: " + signal);
+		
 		int s = 0;
 		try{
 			s = Integer.parseInt(signal);

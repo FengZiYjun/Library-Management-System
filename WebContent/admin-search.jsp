@@ -96,11 +96,12 @@
 								<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
 									<form action="SearchServlet" method="post"
 										class="am-form am-form-horizontal">
+										
 										<div class="am-form-group">
 											<label for="user-name" class="am-u-sm-3 am-form-label">Book
 												ID </label>
 											<div class="am-u-sm-9">
-												<input type="number" pattern="[0-9]*" name="book_id"
+												<input type="text" name="book_id"
 													placeholder="Book ID "> <small>The unique
 													book identity number.</small>
 											</div>

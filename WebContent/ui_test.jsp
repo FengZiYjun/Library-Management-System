@@ -2,9 +2,9 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Amaze UI Admin form Examples</title>
-<meta name="description" content="这是一个form页面">
-<meta name="keywords" content="form">
+<title>Amaze UI Admin help Examples</title>
+<meta name="description" content="è¿™æ˜¯ä¸€ä¸ª help é¡µé¢">
+<meta name="keywords" content="help">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -16,104 +16,140 @@
 <link rel="stylesheet" href="assets/css/admin.css">
 </head>
 <body>
-	<!--[if lte IE 9]>
-<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
-  以获得更好的体验！</p>
-<![endif]-->
+
 
 	<header class="am-topbar am-topbar-inverse admin-header">
 		<div class="am-topbar-brand">
-			<strong>Library</strong> <small>Lux Lebertas</small>
+			<strong>Library</strong> <small>Administration</small>
 		</div>
-
-		<button
-			class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
-			data-am-collapse="{target: '#topbar-collapse'}">
-			<span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span>
-		</button>
 
 		<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
 
 			<ul
 				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
-				<li><a href="javascript:;"><span class="am-icon-envelope-o"></span>
-						Massage <span class="am-badge am-badge-warning">5</span></a></li>
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="javascript:;"> <span class="am-icon-users"></span> Logout
-						<span class="am-icon-caret-down"></span>
-				</a>
-					<ul class="am-dropdown-content">
-						<li><a href="#"><span class="am-icon-user"></span> 资料</a></li>
-						<li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-						<li><a href="#"><span class="am-icon-power-off"></span>
-								退出</a></li>
-					</ul></li>
-				<li class="am-hide-sm-only"><a href="javascript:;"
-					id="admin-fullscreen"><span class="am-icon-arrows-alt"></span>
-						<span class="admin-fullText">Full Screen</span></a></li>
+					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span
+						class="am-icon-users"></span> Logout <span
+						class="am-icon-caret-down"></span>
+				</a></li>
 			</ul>
 		</div>
 	</header>
 
+	<div class="am-cf admin-main">
+		<!-- sidebar start -->
+		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+			<div class="am-offcanvas-bar admin-offcanvas-bar">
+				<ul class="am-list admin-sidebar-list">
+					<li><a href="admin-index.html"><span class="am-icon-home"></span>
+							Front Page</a></li>
+					<li class="admin-parent"><a class="am-cf"
+						data-am-collapse="{target: '#collapse-nav'}"><span
+							class="am-icon-file"></span> Operations <span
+							class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in"
+							id="collapse-nav">
+							<li><a href="admin-add.jsp" class="am-cf"><span
+									class="am-icon-plus"></span> Add</a></li>
+							<li><a href="admin-search.jsp"><span
+									class="am-icon-remove"></span> Delete</a></li>
+							<li><a href="admin-search.jsp"><span
+									class="am-icon-search"></span> Search </a></li>
+							<li><a href="admin-search.jsp"><span
+									class="am-icon-pencil"></span> Modify </a></li>
+						</ul></li>
+				</ul>
 
-	<!-- content start -->
-
-	<div class="admin-content-body">
-		<div class="am-cf am-padding am-padding-bottom-0">
-			<div class="am-fl am-cf">
-				<strong class="am-text-primary am-text-lg">My Library</strong> / <small>form</small>
+				<div class="am-panel am-panel-default admin-sidebar-panel">
+					<div class="am-panel-bd">
+						<p>
+							<span class="am-icon-tag"></span> wiki
+						</p>
+						<p>Welcome to the administration page!</p>
+					</div>
+				</div>
 			</div>
 		</div>
+		<!-- sidebar end -->
 
-		<hr>
+		<!-- content start -->
+		<div class="admin-content">
+			<div class="admin-content-body">
+				<div class="am-cf am-padding am-padding-bottom-0">
+					<div class="am-fl am-cf">
+						<strong class="am-text-primary am-text-lg">Result</strong> / <small>Table</small>
+					</div>
+				</div>
 
-		<div class="am-tabs am-margin" data-am-tabs="">
-			<ul class="am-tabs-nav am-nav am-nav-tabs">
-				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic
-						Info</a></li>
-				<li class="am-active"><a>Books</a></li>
-				<li><a
-					href="http://localhost:8080/LibraryManageSystem/Advanced.jsp">Advanced</a></li>
-			</ul>
-			<br> <a href="#" class="am-btn am-btn-primary am-active"
-				role="button">Loan</a> <a href="#" class="am-btn am-btn-primary"
-				role="button">History</a><br> <br>
-			<div class="am-scrollable-horizontal">
-				<table
-					class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
-					<thead>
-						<tr>
-							<th>Book ID</th>
-							<th>Title</th>
-							<th>BorrowTime</th>
-							<th>Author</th>
-							<th>Tag</th>
-							<th>Publisher</th>
-							<th>PublishYear</th>
-							<th>ISBN</th>
-							<th>call_number</th>
-						</tr>
-					</thead>
-					<jsp:useBean id="loan" scope="session" class="loan.LoanBean" />
-					<tbody>
-						
-					</tbody>
-				</table>
+				<hr>
+
+				<div class="am-g">
+					<div class="am-u-sm-12">
+
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<th class="table-check"><input type="checkbox"></th>
+									<th class="table-id">ID</th>
+									<th class="table-title">Title</th>
+									<th class="table-type">Author</th>
+									<th class="table-author am-hide-sm-only">Publisher</th>
+									<th class="table-date am-hide-sm-only">PublishYear</th>
+									<th class="table-set">Tag</th>
+									<th class="table-id">ISBN</th>
+									<th class="table-id">call_number</th>
+
+								</tr>
+							</thead>
+							<tbody>
+
+
+								<tr>
+									<td>
+									
+									
+
+										<form class="am-form" method="post" name="a">
+											<input type="hidden" name="signal" value="2" /> <input
+												type="button" value="modify"
+												class="am-btn am-btn-default am-btn-xs am-text-secondary"
+												onclick="a.action='ControllerServlet';a.submit();" />
+										</form>
+
+										<form class="am-form" method="post" name="b">
+											<input type="hidden" name="signal" value="3" /> <input
+												type="button" value="remove"
+												class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"
+												onclick="b.action='ControllerServlet';b.submit();" />
+										</form>
+									
+									
+									
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+						<hr>
+
+					</div>
+
+				</div>
 			</div>
 
+
+			<footer class="admin-content-footer">
+				<hr>
+				<p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed
+					under MIT license.</p>
+			</footer>
+
 		</div>
+		<!-- content end -->
+
 	</div>
-
-
-
-	<footer class="admin-content-footer">
-		<hr>
-	</footer>
-
-	<!-- content end -->
-
-
 
 	<a href="#"
 		class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
@@ -121,6 +157,8 @@
 
 	<footer>
 		<hr>
+		<p class="am-padding-left">@ 2014 AllMobilize, Inc. Licensed under
+			MIT license.</p>
 	</footer>
 
 	<!--[if lt IE 9]>
