@@ -200,7 +200,7 @@
 
 		<footer class="admin-content-footer">
 			<hr>
-			<p class="am-padding-left">Â© 2014 AllMobilize, Inc. Licensed
+			<p class="am-padding-left">@ 2014 AllMobilize, Inc. Licensed
 				under MIT license.</p>
 		</footer>
 
