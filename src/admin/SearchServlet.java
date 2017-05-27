@@ -53,7 +53,7 @@ public class SearchServlet extends HttpServlet {
 				if(!where.equals("WHERE")){
 					where = where + " AND";
 				}
-				where = where + " " + info_name[i] + "='" + para + "'";
+				where = where + " " + info_name[i] + " LIKE '%" + para + "%'";
 			}
 		}
 		if(!where.equals("WHERE")){
