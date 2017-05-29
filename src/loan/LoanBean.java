@@ -62,6 +62,7 @@ public class LoanBean {
 			BookInfo = new String[row_num][col_num];
 			for(int i=0;res.next();i++){
 					// Here this can be improved by abstraction. 
+					// failed code
 					BookInfo[i][0] = res.getNString("book_id");
 					BookInfo[i][1] = res.getNString("title");
 					BookInfo[i][2] = res.getNString("borrow_time");

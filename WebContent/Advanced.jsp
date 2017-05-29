@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Amaze UI Admin form Examples</title>
-<meta name="description" content="这是一个form页面">
+<meta name="description" content="">
 <meta name="keywords" content="form">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="renderer" content="webkit">
@@ -62,7 +62,7 @@
 			<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
 
         <li><a href="#" class="am-text-success"><span class=" am-icon-book am-icon-sm"></span><br>All Books<br></a></li>
-        <li><a href="#" class="am-text-warning"><span class=" am-icon-search am-icon-sm"></span><br>Search<br></a></li>
+        <li><a href="http://localhost:8080/LibraryManageSystem/Advanced-search.jsp" class="am-text-warning"><span class=" am-icon-search am-icon-sm"></span><br>Search<br></a></li>
         <li><a href="#" class="am-text-danger"><span class=" am-icon-magic am-icon-sm"></span><br>Recommendation<br></a></li>
       	
       </ul>

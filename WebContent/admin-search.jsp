@@ -95,7 +95,7 @@
 
 								<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
 									<form action="SearchServlet" method="post"
-										class="am-form am-form-horizontal">
+										class="am-form am-form-horizontal am-smooth-scroll">
 										
 										<div class="am-form-group">
 											<label for="user-name" class="am-u-sm-3 am-form-label">Book
@@ -187,7 +187,7 @@
 
 		<footer class="admin-content-footer">
 			<hr>
-			<p class="am-padding-left">Â© 2014 AllMobilize, Inc. Licensed
+			<p class="am-padding-left">@ 2014 AllMobilize, Inc. Licensed
 				under MIT license.</p>
 		</footer>
 

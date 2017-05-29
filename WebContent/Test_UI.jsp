@@ -2,9 +2,9 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Amaze UI Admin help Examples</title>
-<meta name="description" content="è¿™æ˜¯ä¸€ä¸ª help é¡µé¢">
-<meta name="keywords" content="help">
+<title>Amaze UI Admin form Examples</title>
+<meta name="description" content="这是一个form页面">
+<meta name="keywords" content="form">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -16,140 +16,150 @@
 <link rel="stylesheet" href="assets/css/admin.css">
 </head>
 <body>
-
+	<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
 
 	<header class="am-topbar am-topbar-inverse admin-header">
 		<div class="am-topbar-brand">
-			<strong>Library</strong> <small>Administration</small>
+			<strong>Library</strong> <small>Lux Lebertas</small>
 		</div>
 
 		<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
 
 			<ul
 				class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
+				<li><a href="javascript:;"><span class="am-icon-envelope-o"></span>
+						Massage <span class="am-badge am-badge-warning">5</span></a></li>
 				<li class="am-dropdown" data-am-dropdown=""><a
 					class="am-dropdown-toggle" data-am-dropdown-toggle=""
-					href="http://localhost:8080/LibraryManageSystem/index.jsp"> <span
-						class="am-icon-users"></span> Logout <span
-						class="am-icon-caret-down"></span>
-				</a></li>
+					href="http://localhost:8080/LibraryManageSystem/LogoutServlet"> <span class="am-icon-users"></span> Logout
+				</a>
+					</li>
 			</ul>
 		</div>
 	</header>
 
-	<div class="am-cf admin-main">
-		<!-- sidebar start -->
-		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
-			<div class="am-offcanvas-bar admin-offcanvas-bar">
-				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span>
-							Front Page</a></li>
-					<li class="admin-parent"><a class="am-cf"
-						data-am-collapse="{target: '#collapse-nav'}"><span
-							class="am-icon-file"></span> Operations <span
-							class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						<ul class="am-list am-collapse admin-sidebar-sub am-in"
-							id="collapse-nav">
-							<li><a href="admin-add.jsp" class="am-cf"><span
-									class="am-icon-plus"></span> Add</a></li>
-							<li><a href="admin-search.jsp"><span
-									class="am-icon-remove"></span> Delete</a></li>
-							<li><a href="admin-search.jsp"><span
-									class="am-icon-search"></span> Search </a></li>
-							<li><a href="admin-search.jsp"><span
-									class="am-icon-pencil"></span> Modify </a></li>
-						</ul></li>
-				</ul>
 
-				<div class="am-panel am-panel-default admin-sidebar-panel">
-					<div class="am-panel-bd">
-						<p>
-							<span class="am-icon-tag"></span> wiki
-						</p>
-						<p>Welcome to the administration page!</p>
-					</div>
-				</div>
+	<!-- content start -->
+
+	<div class="admin-content-body">
+		<div class="am-cf am-padding am-padding-bottom-0">
+			<div class="am-fl am-cf">
+				<strong class="am-text-primary am-text-lg">My Library</strong> / <small>form</small>
 			</div>
 		</div>
-		<!-- sidebar end -->
+		<hr>
 
-		<!-- content start -->
-		<div class="admin-content">
-			<div class="admin-content-body">
-				<div class="am-cf am-padding am-padding-bottom-0">
-					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">Result</strong> / <small>Table</small>
+		
+			<ul class="am-tabs-nav am-nav am-nav-tabs">
+				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic Info</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/bookInfo.jsp">Books</a></li>
+				<li class="am-active"><a>Advanced</a></li>
+			</ul>
+			<br>
+			<div class="am-tabs am-margin " data-am-tabs="">
+					<ul class="am-tabs-nav am-nav am-nav-tabs">
+					</ul>
+
+					<div class="am-tabs-bd ">
+						<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+
+							<div class="am-g am-scroll">
+								<div class="am-u-sm-12 am-u-md-4 am-u-md-push-8 am-smooth-scroll"></div>
+
+								<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4 am-scroll">
+									<form action="SearchServlet" method="post" class="am-form am-form-horizontal am-smooth-scroll">
+										
+										<div class="am-form-group">
+											<label for="user-name" class="am-u-sm-3 am-form-label">Book
+												ID </label>
+											<div class="am-u-sm-9">
+												<input type="text" name="book_id" placeholder="Book ID "> <small>The unique
+													book identity number.</small>
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-email" class="am-u-sm-3 am-form-label">Title
+											</label>
+											<div class="am-u-sm-9">
+												<input type="text" name="title" placeholder="Title">
+												<small></small>
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-phone" class="am-u-sm-3 am-form-label">Author
+											</label>
+											<div class="am-u-sm-9">
+												<input type="text" name="author" placeholder="Author">
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-QQ" class="am-u-sm-3 am-form-label">Publisher
+											</label>
+											<div class="am-u-sm-9">
+												<input type="text" name="publisher" placeholder="Enter Publisher">
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-weibo" class="am-u-sm-3 am-form-label">Publish Year
+											</label>
+											<div class="am-u-sm-9">
+												<input type="text" name="publish_year" placeholder="Publish Year">
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-weibo" class="am-u-sm-3 am-form-label">ISBN
+											</label>
+											<div class="am-u-sm-9">
+												<input type="text" name="ISBN" placeholder="ISBN">
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-weibo" class="am-u-sm-3 am-form-label">Call Num </label>
+											<div class="am-u-sm-9">
+												<input type="text" name="call_number" placeholder="Call Number">
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<label for="user-weibo" class="am-u-sm-3 am-form-label">Tag
+											</label>
+											<div class="am-u-sm-9">
+												<input type="text" name="tag" placeholder="Tag">
+											</div>
+										</div>
+
+										<div class="am-form-group">
+											<div class="am-u-sm-9 am-u-sm-push-3">
+												<input type="submit" class="am-btn am-btn-primary" value="Search">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+
+
+						</div>
 					</div>
 				</div>
-
-				<hr>
-
-				<div class="am-g">
-					<div class="am-u-sm-12">
-
-						<table class="am-table am-table-striped am-table-hover table-main">
-							<thead>
-								<tr>
-									<th class="table-check"><input type="checkbox"></th>
-									<th class="table-id">ID</th>
-									<th class="table-title">Title</th>
-									<th class="table-type">Author</th>
-									<th class="table-author am-hide-sm-only">Publisher</th>
-									<th class="table-date am-hide-sm-only">PublishYear</th>
-									<th class="table-set">Tag</th>
-									<th class="table-id">ISBN</th>
-									<th class="table-id">call_number</th>
-
-								</tr>
-							</thead>
-							<tbody>
-
-
-								<tr>
-									<td>
-									
-									
-
-										<form class="am-form" method="post" name="a">
-											<input type="hidden" name="signal" value="2" /> <input
-												type="button" value="modify"
-												class="am-btn am-btn-default am-btn-xs am-text-secondary"
-												onclick="a.action='ControllerServlet';a.submit();" />
-										</form>
-
-										<form class="am-form" method="post" name="b">
-											<input type="hidden" name="signal" value="3" /> <input
-												type="button" value="remove"
-												class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"
-												onclick="b.action='ControllerServlet';b.submit();" />
-										</form>
-									
-									
-									
-									</td>
-								</tr>
-
-							</tbody>
-						</table>
-
-						<hr>
-
-					</div>
-
-				</div>
+		<br>
 			</div>
-
 
 			<footer class="admin-content-footer">
 				<hr>
-				<p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed
-					under MIT license.</p>
 			</footer>
-
-		</div>
+		
 		<!-- content end -->
 
-	</div>
 
 	<a href="#"
 		class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
@@ -157,8 +167,6 @@
 
 	<footer>
 		<hr>
-		<p class="am-padding-left">@ 2014 AllMobilize, Inc. Licensed under
-			MIT license.</p>
 	</footer>
 
 	<!--[if lt IE 9]>

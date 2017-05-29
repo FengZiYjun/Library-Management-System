@@ -70,7 +70,7 @@
 								<div class="am-u-sm-12 am-u-md-4 am-u-md-push-8"></div>
 
 								<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-									<form action="SearchServlet" method="post" class="am-form am-form-horizontal">
+									<form action="AdvancedSearchServlet" method="post" class="am-form am-form-horizontal">
 										
 										<div class="am-form-group">
 											<label for="user-name" class="am-u-sm-3 am-form-label">Book
