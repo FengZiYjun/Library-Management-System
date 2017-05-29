@@ -47,10 +47,11 @@
 			<div class="admin-content-body">
 				<div class="am-cf am-padding am-padding-bottom-0">
 					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">Result</strong> / <small>Table</small>
+						<strong class="am-text-primary am-text-lg">My Library</strong> / <small>Advance</small>
 					</div>
 				</div>
-
+				
+				
 				<ul class="am-tabs-nav am-nav am-nav-tabs">
 					<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic
 							Info</a></li>
@@ -59,6 +60,12 @@
 					<li class="am-active"><a>Advanced</a></li>
 				</ul>
 				<br>
+				<div class="am-cf am-padding am-padding-bottom-0">
+					<div class="am-fl am-cf">
+						<strong class="am-text-primary am-text-lg">Result</strong> / <small>Table</small>
+					</div>
+				</div>
+				
 
 				<hr>
 
