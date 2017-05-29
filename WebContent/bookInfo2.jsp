@@ -87,8 +87,7 @@
 					<tbody>
 						<%
 							if (history.isLoaded() == false) {
-								//history.setBookInfo(person.getUserID());
-								history.setBookInfo("002");
+								history.setBookInfo(person.getUserID());
 							}
 							int rows = history.getRowNum();
 							String[][] books = history.getBookInfo();

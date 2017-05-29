@@ -55,7 +55,7 @@
 			<form action="LoginServlet" method="post" class="am-form">
 				<label for="text">Your user ID:</label> <input type="text"
 					name="username"> <br /> <label for="password">Password:</label>
-				<input type="text" name="password" /> 
+				<input type="password" name="password" /> 
 				 <br>  <input type="submit" value="login" class="am-btn am-btn-primary am-btn-sm am-fl"/>
 			</form>
 			<br> 
