@@ -44,7 +44,7 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span> Front
+					<li><a href="administrator.jsp"><span class="am-icon-home"></span> Front
 							Page</a></li>
 					<li class="admin-parent"><a class="am-cf"
 						data-am-collapse="{target: '#collapse-nav'}"><span
@@ -62,9 +62,8 @@
 									class="am-icon-pencil"></span> Modify </a></li>
 
 						</ul></li>
-
-
-
+						<li><a href="CheckLoanServlet"><span class="am-icon-heart"></span>  Loan Events
+							</a></li>
 				</ul>
 
 
@@ -107,12 +106,6 @@
 					</div>
 				</div>
 			</div>
-
-			<footer class="admin-content-footer">
-				<hr>
-				<p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed
-					under MIT license.</p>
-			</footer>
 
 		</div>
 		<!-- content end -->

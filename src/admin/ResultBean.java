@@ -35,7 +35,8 @@ public class ResultBean {
 //		ResultBean rb = new ResultBean();
 //		rb.set("4213");
 //		rb.set("4124");
-//		System.out.println(rb.get(0));
+		String s = new String();
+		System.out.println(s.length());
 	}
 
 }

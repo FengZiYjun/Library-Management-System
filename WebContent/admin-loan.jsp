@@ -16,8 +16,6 @@
 <link rel="stylesheet" href="assets/css/admin.css">
 </head>
 <body>
-
-
 	<header class="am-topbar am-topbar-inverse admin-header">
 		<div class="am-topbar-brand">
 			<strong>Library</strong> <small>Administration</small>
@@ -44,21 +42,6 @@
 				<ul class="am-list admin-sidebar-list">
 					<li><a href="admin-index.html"><span class="am-icon-home"></span>
 							Front Page</a></li>
-					<li class="admin-parent"><a class="am-cf"
-						data-am-collapse="{target: '#collapse-nav'}"><span
-							class="am-icon-file"></span> Operations <span
-							class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						<ul class="am-list am-collapse admin-sidebar-sub am-in"
-							id="collapse-nav">
-							<li><a href="admin-add.jsp" class="am-cf"><span
-									class="am-icon-plus"></span> Add</a></li>
-							<li><a href="admin-search.jsp"><span
-									class="am-icon-remove"></span> Delete</a></li>
-							<li><a href="admin-search.jsp"><span
-									class="am-icon-search"></span> Search </a></li>
-							<li><a href="admin-search.jsp"><span
-									class="am-icon-pencil"></span> Modify </a></li>
-						</ul></li>
 				</ul>
 
 				<div class="am-panel am-panel-default admin-sidebar-panel">
@@ -78,7 +61,7 @@
 			<div class="admin-content-body">
 				<div class="am-cf am-padding am-padding-bottom-0">
 					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">Result</strong> / <small>Table</small>
+						<strong class="am-text-primary am-text-lg">Loan</strong> / <small>information</small>
 					</div>
 				</div>
 
@@ -86,59 +69,76 @@
 
 				<div class="am-g">
 					<div class="am-u-sm-12">
+					
+							<table
+								class="am-table am-table-striped am-table-hover table-main">
+								<thead>
+									<tr>
+										<th class="table-check"><input type="checkbox"></th>
+										<th class="table-id">User ID</th>
+										<th class="table-id">Book ID</th>
+										<th class="table-title">Title</th>
+										<th class="table-id">Borrow Time</th>
+										<th class="table-type">Author</th>
+										<th class="table-author am-hide-sm-only">Publisher</th>
+										<th class="table-date am-hide-sm-only">PublishYear</th>
+										<th class="table-set">Tag</th>
+										<th class="table-id">ISBN</th>
+										<th class="table-id">call_number</th>
 
-						<table class="am-table am-table-striped am-table-hover table-main">
-							<thead>
-								<tr>
-									<th class="table-check"><input type="checkbox"></th>
-									<th class="table-id">ID</th>
-									<th class="table-title">Title</th>
-									<th class="table-type">Author</th>
-									<th class="table-author am-hide-sm-only">Publisher</th>
-									<th class="table-date am-hide-sm-only">PublishYear</th>
-									<th class="table-set">Tag</th>
-									<th class="table-id">ISBN</th>
-									<th class="table-id">call_number</th>
+									</tr>
+								</thead>
+								<tbody>
+																
+										<%
+											String[][] book_info = (String[][]) request.getAttribute("book_info");
+											
+											String[] info_name = { "user_id", "book_id", "title","borrow_time","author","publisher",
+													"publish_year","tag","ISBN", "call_number" };
+											
+											int row_num = 0;
+											if(book_info != null){
+												row_num = book_info.length;
+											}
+												
+											for (int i = 0; i < row_num; i++) { %>
+											<tr>
+											<td><input type="checkbox"></td>
+											
+											<%
+												for (int j = 0; j < info_name.length; j++) {
+													out.print("<td>" + book_info[i][j] + "</td>");
+												}
+										%>
 
-								</tr>
-							</thead>
-							<tbody>
-
-
-								<tr>
-									<td>
-									
-									
-
-										<form class="am-form" method="post" name="a">
-											<input type="hidden" name="signal" value="2" /> <input
-												type="button" value="modify"
+										<td>
+												
+											<% char name =  (char)(i + 65); %>
+											<form class="am-form" method="post" name="<%=name%>">
+											<input type="hidden" name="user_id" value="<%=book_info[i][0] %>" /> 
+											<input type="hidden" name="book_id" value="<%=book_info[i][1] %>" /><input
+												type="button" value="return"
 												class="am-btn am-btn-default am-btn-xs am-text-secondary"
-												onclick="a.action='ControllerServlet';a.submit();" />
+												onclick="<%=name%>.action='ReturnServlet';<%=name%>.submit();" />
 										</form>
 
-										<form class="am-form" method="post" name="b">
-											<input type="hidden" name="signal" value="3" /> <input
-												type="button" value="remove"
-												class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"
-												onclick="b.action='ControllerServlet';b.submit();" />
-										</form>
-									
-									
-									
-									</td>
-								</tr>
+										</td>
 
-							</tbody>
-						</table>
 
-						<hr>
+									</tr>
+									<%
+										}
+									%>
+										
+								</tbody>
+							</table>
+
+							<hr>
 
 					</div>
 
 				</div>
 			</div>
-
 
 			<footer class="admin-content-footer">
 				<hr>

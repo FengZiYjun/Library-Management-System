@@ -93,26 +93,13 @@
 							String[][] books = loan.getBookInfo();
 							for (int i = 0; i < rows; i++) {
 								String[] book = books[i];
-						%>
-						<%
-							out.print("<tr><td>");
+						
+								out.print("<tr><td>");
 								out.print(book[0]);
-								out.print("</td><td>");
-								out.print(book[1]);
-								out.print("</td><td>");
-								out.print(book[2]);
-								out.print("</td><td>");
-								out.print(book[3]);
-								out.print("</td><td>");
-								out.print(book[4]);
-								out.print("</td><td>");
-								out.print(book[5]);
-								out.print("</td><td>");
-								out.print(book[6]);
-								out.print("</td><td>");
-								out.print(book[7]);
-								out.print("</td><td>");
-								out.print(book[8]);
+								for(int j=1;j<9;j++){
+									out.print("</td><td>");
+									out.print(book[j]);
+								}
 								out.print("</td></tr>");
 							}
 						%>
@@ -141,11 +128,6 @@
 		<hr>
 	</footer>
 
-	<!--[if lt IE 9]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]><!-->
 	<script src="assets/js/jquery.min.js"></script>

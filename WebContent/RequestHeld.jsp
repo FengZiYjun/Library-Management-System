@@ -59,13 +59,14 @@
 				<li class="am-active"><a>Advanced</a></li>
 			</ul>
 			<br>
-			<ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
+			
+			<div class="am-u-sm-12">
+          <h2 class="am-text-center am-text-xxl am-margin-top-lg">Request has already been held.</h2>
+          <p class="am-text-center">Please try another.</p>
 
-        <li><a href="http://localhost:8080/LibraryManageSystem/AllBookServlet" class="am-text-success"><span class=" am-icon-book am-icon-sm"></span><br>All Books<br></a></li>
-        <li><a href="http://localhost:8080/LibraryManageSystem/Advanced-search.jsp" class="am-text-warning"><span class=" am-icon-search am-icon-sm"></span><br>Search<br></a></li>
-        <li><a href="#" class="am-text-danger"><span class=" am-icon-magic am-icon-sm"></span><br>Recommendation<br></a></li>
-      	
-      </ul>
+        </div>
+			
+			
 		<br>
 			</div>
 

@@ -52,7 +52,7 @@
 		</div>
 		<hr>
 
-		<div class="am-tabs am-margin" data-am-tabs="">
+		
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
 				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic Info</a></li>
 				<li><a href="http://localhost:8080/LibraryManageSystem/bookInfo.jsp">Books</a></li>
@@ -66,11 +66,11 @@
 					<div class="am-tabs-bd ">
 						<div class="am-tab-panel am-fade am-in am-active" id="tab1">
 
-							<div class="am-g ">
-								<div class="am-u-sm-12 am-u-md-4 am-u-md-push-8"></div>
+							<div class="am-g am-scroll">
+								<div class="am-u-sm-12 am-u-md-4 am-u-md-push-8 am-smooth-scroll"></div>
 
-								<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-									<form action="AdvancedSearchServlet" method="post" class="am-form am-form-horizontal">
+								<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4 am-scroll">
+									<form action="SearchServlet" method="post" class="am-form am-form-horizontal am-smooth-scroll">
 										
 										<div class="am-form-group">
 											<label for="user-name" class="am-u-sm-3 am-form-label">Book
@@ -157,7 +157,7 @@
 			<footer class="admin-content-footer">
 				<hr>
 			</footer>
-		</div>
+		
 		<!-- content end -->
 
 
