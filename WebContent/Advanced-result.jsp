@@ -99,6 +99,19 @@
 												out.print("<td>" + book_info[i][j] + "</td>");
 											}
 									%>
+									
+									
+									<td>
+												
+											<% char name =  (char)(i + 65); %>
+											<form class="am-form" method="post" name="<%=name%>">
+											<input type="hidden" name="signal" value="<%=i %>" /> <input
+												type="button" value="request"
+												class="am-btn am-btn-default am-btn-xs am-text-secondary"
+												onclick="<%=name%>.action='RequestServlet';<%=name%>.submit();" />
+											</form>
+										</td>
+										
 								</tr>
 								<%
 									}

@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Amaze UI Admin form Examples</title>
-<meta name="description" content="这是一个form页面">
+<meta name="description" content="">
 <meta name="keywords" content="form">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="renderer" content="webkit">
@@ -25,8 +25,6 @@
 		<div class="am-topbar-brand">
 			<strong>Library</strong> <small>Lux Lebertas</small>
 		</div>
-
-		
 
 		<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
 
@@ -52,72 +50,31 @@
 				<strong class="am-text-primary am-text-lg">My Library</strong> / <small>form</small>
 			</div>
 		</div>
-
 		<hr>
 
 		<div class="am-tabs am-margin" data-am-tabs="">
 			<ul class="am-tabs-nav am-nav am-nav-tabs">
-				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic
-						Info</a></li>
-				<li class="am-active"><a>Books</a></li>
-				<li><a
-					href="http://localhost:8080/LibraryManageSystem/Advanced.jsp">Advanced</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic Info</a></li>
+				<li><a href="http://localhost:8080/LibraryManageSystem/bookInfo.jsp">Books</a></li>
+				<li class="am-active"><a>Advanced</a></li>
 			</ul>
-			<br> <a class="am-btn am-btn-primary am-active"
-				role="button">Loan</a> <a href="http://localhost:8080/LibraryManageSystem/bookInfo2.jsp" class="am-btn am-btn-primary"
-				role="button">History</a><br> <br>
-			<div class="am-scrollable-horizontal">
-				<table
-					class="am-table am-table-bordered am-table-striped am-table-compact am-text-nowrap">
-					<thead>
-						<tr>
-							<th>Book ID</th>
-							<th>Title</th>
-							<th>BorrowTime</th>
-							<th>Author</th>
-							<th>Tag</th>
-							<th>Publisher</th>
-							<th>PublishYear</th>
-							<th>ISBN</th>
-							<th>call_number</th>
-						</tr>
-					</thead>
-					<jsp:useBean id="person" scope="session" class="personalInfo.person" />
-					<jsp:useBean id="loan" scope="session" class="loan.LoanBean" />
-					<tbody>
-						<%
-							if (loan.isLoaded() == false) {
-								loan.setBookInfo(person.getUserID());
-							}
-							int rows = loan.getRowNum();
-							String[][] books = loan.getBookInfo();
-							for (int i = 0; i < rows; i++) {
-								String[] book = books[i];
-						
-								out.print("<tr><td>");
-								out.print(book[0]);
-								for(int j=1;j<9;j++){
-									out.print("</td><td>");
-									out.print(book[j]);
-								}
-								out.print("</td></tr>");
-							}
-						%>
-					</tbody>
-				</table>
+			<br>
+			
+			<div class="am-u-sm-12">
+          <h2 class="am-text-center am-text-xxl am-margin-top-lg">Request has already been held.</h2>
+          <p class="am-text-center">Please try another.</p>
+
+        </div>
+			
+			
+		<br>
 			</div>
 
+			<footer class="admin-content-footer">
+				<hr>
+			</footer>
 		</div>
-	</div>
-
-
-
-	<footer class="admin-content-footer">
-		<hr>
-	</footer>
-
-	<!-- content end -->
-
+		<!-- content end -->
 
 
 	<a href="#"
@@ -128,6 +85,11 @@
 		<hr>
 	</footer>
 
+	<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]><!-->
 	<script src="assets/js/jquery.min.js"></script>
