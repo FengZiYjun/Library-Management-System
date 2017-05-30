@@ -34,7 +34,7 @@
 		<div class="am-g">
 			<h1>LIBERTAS</h1>
 			<p>
-				Ultra-light Book Management<br />just as it has always been
+				just as it has always been
 			</p>
 		</div>
 		<hr />
@@ -44,11 +44,11 @@
 			<h3>Login</h3>
 			<hr>
 			<div class="am-btn-group">
-				<a href="#" class="am-btn am-btn-secondary am-btn-sm"><i
-					class="am-icon-github am-icon-sm"></i> Github</a> <a href="#"
+				<a href="https://github.com" class="am-btn am-btn-secondary am-btn-sm"><i
+					class="am-icon-github am-icon-sm"></i> Github</a> <a href="https://accounts.google.com"
 					class="am-btn am-btn-success am-btn-sm"><i
 					class="am-icon-google-plus-square am-icon-sm"></i> Google+</a> <a
-					href="#" class="am-btn am-btn-primary am-btn-sm"><i
+					href="https://stackoverflow.com/" class="am-btn am-btn-primary am-btn-sm"><i
 					class="am-icon-stack-overflow am-icon-sm"></i> stackOverflow</a>
 			</div>
 			<br> <br>

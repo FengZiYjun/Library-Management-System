@@ -41,7 +41,7 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span>
+					<li><a href="administrator.jsp"><span class="am-icon-home"></span>
 							Front Page</a></li>
 					<li class="admin-parent"><a class="am-cf"
 						data-am-collapse="{target: '#collapse-nav'}"><span
@@ -100,7 +100,7 @@
 								<label for="user-name" class="am-u-sm-3 am-form-label">Book
 									ID/ </label>
 								<div class="am-u-sm-9">
-									<input type="number" pattern="[0-9]*" name="book_id"
+									<input type="text"  name="book_id"
 										placeholder="Book ID "> <small>The unique book
 										identity number.</small>
 								</div>

@@ -40,7 +40,7 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span>
+					<li><a href="administrator.jsp"><span class="am-icon-home"></span>
 							Front Page</a></li>
 				</ul>
 

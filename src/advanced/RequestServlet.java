@@ -97,6 +97,7 @@ public class RequestServlet extends HttpServlet {
 		if(insertion==false){
 			response.sendRedirect("RequestHeld.jsp");
 		}else{
+			LoanBean.clear();
 			response.sendRedirect("bookInfo.jsp");
 		}
 
