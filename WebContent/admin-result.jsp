@@ -42,7 +42,7 @@
 		<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
 			<div class="am-offcanvas-bar admin-offcanvas-bar">
 				<ul class="am-list admin-sidebar-list">
-					<li><a href="admin-index.html"><span class="am-icon-home"></span>
+					<li><a href="administrator.jsp"><span class="am-icon-home"></span>
 							Front Page</a></li>
 					<li class="admin-parent"><a class="am-cf"
 						data-am-collapse="{target: '#collapse-nav'}"><span
@@ -108,8 +108,8 @@
 										<%
 											String[][] book_info = (String[][]) request.getAttribute("book_info");
 											
-											String[] info_name = { "book_id", "publisher", "author", "title", "ISBN", "call_number", "tag",
-													"publish_year" };
+											String[] info_name = { "book_id", "title","author","publisher", "publish_year","tag", "ISBN", "call_number" 
+											};
 											int row_num = book_info.length;
 											
 											for (int i = 0; i < row_num; i++) { %>

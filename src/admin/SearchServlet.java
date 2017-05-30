@@ -20,7 +20,7 @@ import DBconnect.DBconnect;
 public class SearchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	String[] info_name = {"book_id", "publisher","author", "title", "ISBN", "call_number", "tag", "publish_year"};
+	String[] info_name = { "book_id", "title","author","publisher", "publish_year","tag", "ISBN", "call_number"};
 	
     /**
      * @see HttpServlet#HttpServlet()
