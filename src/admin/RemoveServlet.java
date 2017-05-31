@@ -35,18 +35,25 @@ public class RemoveServlet extends HttpServlet {
 		int row = (int) session.getAttribute("row");
 		
 		String book_id = ResultBean.get(row);
-		System.out.println(book_id);
+		//System.out.println(book_id);
 		
 		ResultBean.clear();
 		
 		DBconnect con = new DBconnect();
 		con.connect();
 		String sql = "DELETE FROM book where  book_id='" + book_id + "';";
-		con.update(sql);
+		int ret = con.update(sql);
 		con.close();
 		
+		if(ret > 0){
+			System.out.println("successfully remove!");
+			response.sendRedirect("admin-search.jsp");
+		}else{
+			System.out.println("fail to remove!");
+			response.sendRedirect("admin-error.jsp");
+		}
 		
-		response.sendRedirect("admin-search.jsp");
+		
 	}
 
 	/**
