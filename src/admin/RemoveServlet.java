@@ -1,6 +1,9 @@
 package admin;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -35,18 +38,35 @@ public class RemoveServlet extends HttpServlet {
 		int row = (int) session.getAttribute("row");
 		
 		String book_id = ResultBean.get(row);
-		System.out.println(book_id);
+		//System.out.println(book_id);
 		
 		ResultBean.clear();
 		
 		DBconnect con = new DBconnect();
 		con.connect();
-		String sql = "DELETE FROM book where  book_id='" + book_id + "';";
-		con.update(sql);
-		con.close();
+		String sql = "SELECT * FROM loan WHERE book_id='" + book_id + "';";
+		ResultSet res = con.query(sql);
 		
+		try {
+			if(!res.next()){
+				sql = "DELETE FROM book where  book_id='" + book_id + "';";
+				con.update(sql);
+				con.close();
+				
+				System.out.println("successfully remove!");
+				response.sendRedirect("admin-search.jsp");
+			}else{
+				
+				con.close();
+				System.out.println("fail to remove!");
+				response.sendRedirect("admin-error.jsp");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		response.sendRedirect("admin-search.jsp");
+
 	}
 
 	/**
