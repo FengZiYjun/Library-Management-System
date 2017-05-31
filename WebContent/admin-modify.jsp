@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Amaze UI Admin help Examples</title>
+<title>LIBERTAS</title>
 <meta name="description" content="è¿™æ˜¯ä¸€ä¸ª help é¡µé¢">
 <meta name="keywords" content="help">
 <meta name="viewport" content="width=device-width, initial-scale=1">

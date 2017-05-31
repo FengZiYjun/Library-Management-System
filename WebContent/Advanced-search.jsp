@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Amaze UI Admin form Examples</title>
+<title>LIBERTAS</title>
 <meta name="description" content="这是一个form页面">
 <meta name="keywords" content="form">
 <meta name="viewport" content="width=device-width, initial-scale=1">

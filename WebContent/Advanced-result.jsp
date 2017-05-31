@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Amaze UI Admin help Examples</title>
+<title>LIBERTAS</title>
 <meta name="description" content="">
 <meta name="keywords" content="help">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
 
 	<header class="am-topbar am-topbar-inverse admin-header">
 		<div class="am-topbar-brand">
-			<strong>Library</strong> <small>Administration</small>
+			<strong>My Library</strong> <small></small>
 		</div>
 
 		<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
@@ -47,11 +47,11 @@
 			<div class="admin-content-body">
 				<div class="am-cf am-padding am-padding-bottom-0">
 					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">My Library</strong> / <small>Advance</small>
+						<strong class="am-text-primary am-text-lg"></strong>
 					</div>
 				</div>
 				
-				
+				<hr>
 				<ul class="am-tabs-nav am-nav am-nav-tabs">
 					<li><a href="http://localhost:8080/LibraryManageSystem/ui.jsp">Basic
 							Info</a></li>
@@ -62,7 +62,7 @@
 				<br>
 				<div class="am-cf am-padding am-padding-bottom-0">
 					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">Result</strong> / <small>Table</small>
+						<strong class="am-text-primary am-text-lg">Result</strong> / <small>all books</small>
 					</div>
 				</div>
 				
