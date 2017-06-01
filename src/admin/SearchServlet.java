@@ -60,7 +60,7 @@ public class SearchServlet extends HttpServlet {
 			sql = sql + " " + where;
 		}
 		sql = sql + ";";
-		System.out.println(sql);
+		System.out.println("SearchServlet query: " + sql);
 		
 		DBconnect con = new DBconnect();
 		con.connect();

@@ -1,0 +1,79 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=My Project
+
+[WINDOWS]
+main="My Project","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+classadmin_1_1_add_servlet.html
+classadmin_1_1_add_servlet-members.html
+classadmin_1_1_check_loan_servlet.html
+classadmin_1_1_check_loan_servlet-members.html
+classadmin_1_1_controller_servlet.html
+classadmin_1_1_controller_servlet-members.html
+classadmin_1_1_modify_bean.html
+classadmin_1_1_modify_bean-members.html
+classadmin_1_1_modify_servlet.html
+classadmin_1_1_modify_servlet-members.html
+classadmin_1_1_remove_servlet.html
+classadmin_1_1_remove_servlet-members.html
+classadmin_1_1_result_bean.html
+classadmin_1_1_result_bean-members.html
+classadmin_1_1_return_servlet.html
+classadmin_1_1_return_servlet-members.html
+classadmin_1_1_search_servlet.html
+classadmin_1_1_search_servlet-members.html
+classadvanced_1_1_advanced_search_servlet.html
+classadvanced_1_1_advanced_search_servlet-members.html
+classadvanced_1_1_all_book_servlet.html
+classadvanced_1_1_all_book_servlet-members.html
+classadvanced_1_1_recommend_servlet.html
+classadvanced_1_1_recommend_servlet-members.html
+classadvanced_1_1_request_servlet.html
+classadvanced_1_1_request_servlet-members.html
+class_d_bconnect_1_1_d_bconnect.html
+class_d_bconnect_1_1_d_bconnect-members.html
+classhistory_1_1_history_bean.html
+classhistory_1_1_history_bean-members.html
+classloan_1_1_loan_bean.html
+classloan_1_1_loan_bean-members.html
+classlogin_1_1_login_servlet.html
+classlogin_1_1_login_servlet-members.html
+index.html
+annotated.html
+classes.html
+hierarchy.html
+functions.html
+functions_func.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+classadmin_1_1_add_servlet.png
+classadmin_1_1_check_loan_servlet.png
+classadmin_1_1_controller_servlet.png
+classadmin_1_1_modify_servlet.png
+classadmin_1_1_remove_servlet.png
+classadmin_1_1_return_servlet.png
+classadmin_1_1_search_servlet.png
+classadvanced_1_1_advanced_search_servlet.png
+classadvanced_1_1_all_book_servlet.png
+classadvanced_1_1_recommend_servlet.png
+classadvanced_1_1_request_servlet.png
+classlogin_1_1_login_servlet.png
