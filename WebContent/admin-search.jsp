@@ -51,8 +51,8 @@
 							id="collapse-nav">
 							<li><a href="admin-add.jsp" class="am-cf"><span
 									class="am-icon-plus"></span> Add</a></li>
-							<li><a href="admin-help.html"><span
-									class="admin-search.jsp"></span> Delete</a></li>
+							<li><a href="admin-search.jsp"><span
+									class="am-icon-remove"></span> Delete</a></li>
 							<li><a href="admin-search.jsp"><span
 									class="am-icon-search"></span> Search </a></li>
 							<li><a href="admin-search.jsp"><span
