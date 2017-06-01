@@ -78,6 +78,7 @@ public class SearchServlet extends HttpServlet {
 			int col_num = info_name.length;
 			String[][] book_info = new String[row_num][col_num];
 			
+			ResultBean.clear();
 			for(int i=0;res.next();i++){
 				// load book_id into ResultBean
 				ResultBean.set(res.getString("book_id"));

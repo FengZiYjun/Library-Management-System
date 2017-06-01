@@ -10,7 +10,7 @@ public class ModifyBean {
 	private boolean isLoead = false;
 	private static String book_id;
 	private static String[] info_name = {"publisher","author", "title", "ISBN", "call_number", "tag", "publish_year"};
-	private static String[] book_info = new String[info_name.length];
+	private static String[] book_info;
 	
 	public boolean isLoad(){
 		return isLoead;
@@ -26,6 +26,7 @@ public class ModifyBean {
 	
 	public void loadBookInfo(){
 		isLoead = true;
+		book_info = new String[info_name.length];
 		
 		DBconnect con = new DBconnect();
 		con.connect();
@@ -57,6 +58,10 @@ public class ModifyBean {
 		return ret;
 	}
 	
+	public static void clear(){
+		book_id = null;
+		book_info = null;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
