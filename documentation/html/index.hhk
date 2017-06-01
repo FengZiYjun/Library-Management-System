@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#a8e5e2cb34988a4a3cfbc766448be1fc4"><param name="Name" value="AddServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html"><param name="Name" value="admin::AddServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#a8e5e2cb34988a4a3cfbc766448be1fc4"><param name="Name" value="AddServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#adbc63c3d39dcf577c95795457718f95e"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#a1297b03c40f87a6dff6f3042448583f6"><param name="Name" value="doPost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_check_loan_servlet.html"><param name="Name" value="admin::CheckLoanServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_check_loan_servlet.html#a4b9867090eb9c2ba7daec58d7c3ec0f5"><param name="Name" value="CheckLoanServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_check_loan_servlet.html#abbe0557187c93d0e806e751add7e5daf"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_check_loan_servlet.html#a680e6d567885728b517df79471541ccb"><param name="Name" value="doPost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_controller_servlet.html"><param name="Name" value="admin::ControllerServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_controller_servlet.html#a72f312942007f269cbaf4d86fdd0df36"><param name="Name" value="ControllerServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_controller_servlet.html#a6b5c24ed500d5a4d110e5cb698187742"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_controller_servlet.html#a2c99bb089d8be48e13466b5e5f8c2f95"><param name="Name" value="doPost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html"><param name="Name" value="admin::ModifyBean"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#aef1625745802811d0d717bddcf79a858"><param name="Name" value="getBookInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a1edb15b8795b61fb1c3869473dc4fd65"><param name="Name" value="getID"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a504e0ce1bcef8665104cd2c7f2a92a90"><param name="Name" value="isLoad"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a0854744826c47dc16b1d49d0f9b02e59"><param name="Name" value="loadBookInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a9966a4574bc56a7b121596ec3a8e1400"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a2452b17b38f39a9cfd782c30979024b5"><param name="Name" value="set"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_servlet.html"><param name="Name" value="admin::ModifyServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_servlet.html#a58774982d5e6398cb6d3016f1b652c22"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_servlet.html#a84c3c7bb3f9338a98c39c19557847422"><param name="Name" value="doPost"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_servlet.html#a8afe56ea4faeb9511cdf1ad20497e3bc"><param name="Name" value="ModifyServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_remove_servlet.html"><param name="Name" value="admin::RemoveServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_remove_servlet.html#abeaea85014c5e6cb6eded135ebb1cdec"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_remove_servlet.html#a9d4e3b4e08640f72088a481aeb264c9a"><param name="Name" value="doPost"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_remove_servlet.html#a4a37e587d1e6d20307aec984fbccb9e5"><param name="Name" value="RemoveServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html"><param name="Name" value="admin::ResultBean"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#a52b19e21ef7985439534351caa375c30"><param name="Name" value="clear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#a2f0982074f549dbe0411b96913d596e3"><param name="Name" value="get"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#a8f9b02014a757b0156d353eff6e2f4c0"><param name="Name" value="getRow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#abdd3c9d14bbec8d48297f82376e3892c"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#acc0c90d9819dc46c4429216072ecb701"><param name="Name" value="set"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_return_servlet.html"><param name="Name" value="admin::ReturnServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_return_servlet.html#a05243ac40e544c80bebc6ccc3af310e3"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_return_servlet.html#af2c1e5273df5b6516d9e5f2c61b26eff"><param name="Name" value="doPost"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_return_servlet.html#a855b49f16845178a877261f45279927c"><param name="Name" value="ReturnServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html"><param name="Name" value="admin::SearchServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#af33243d76918c14089eccbc1ca0fbf3a"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#a9183bb5f24ea47c4b159e836e84990d8"><param name="Name" value="doPost"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#a28154723497a97fdf737746ffdf234e8"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#ab50b346d5eff83597546471d03831aa5"><param name="Name" value="SearchServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_advanced_search_servlet.html"><param name="Name" value="advanced::AdvancedSearchServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_advanced_search_servlet.html#acdeda0b58a8e4e4cde7b4755141aa1f5"><param name="Name" value="AdvancedSearchServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_advanced_search_servlet.html#a63c9f9ecb57ff999b13b4ef46764fe39"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_advanced_search_servlet.html#add42de3b72bf474b9462538d39a4f346"><param name="Name" value="doPost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_all_book_servlet.html"><param name="Name" value="advanced::AllBookServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_all_book_servlet.html#a37d738fd86cfcf6b73a81044253d0465"><param name="Name" value="AllBookServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_all_book_servlet.html#a254894253935322173402de169c7d647"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_all_book_servlet.html#a8a5a865de4a130dc91e8354b1a4887ca"><param name="Name" value="doPost"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_recommend_servlet.html"><param name="Name" value="advanced::RecommendServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_recommend_servlet.html#a053694ba555f8bad9dbb25f3f93326fc"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_recommend_servlet.html#af15682cbfbf5f21594538f20d8a8f450"><param name="Name" value="doPost"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_recommend_servlet.html#a0b65a3f29a28d30346b9478aab2fccb6"><param name="Name" value="RecommendServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_request_servlet.html"><param name="Name" value="advanced::RequestServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_request_servlet.html#a56fd652c4380a401d80754ca12cdbbbc"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_request_servlet.html#acd5fa3621347affb7135a9a44853265f"><param name="Name" value="doPost"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_request_servlet.html#ac03b771e0d06eb69766ac2df52cb5f2f"><param name="Name" value="RequestServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_advanced_search_servlet.html#acdeda0b58a8e4e4cde7b4755141aa1f5"><param name="Name" value="AdvancedSearchServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_all_book_servlet.html#a37d738fd86cfcf6b73a81044253d0465"><param name="Name" value="AllBookServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_check_loan_servlet.html#a4b9867090eb9c2ba7daec58d7c3ec0f5"><param name="Name" value="CheckLoanServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#a52b19e21ef7985439534351caa375c30"><param name="Name" value="clear"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#a52b19e21ef7985439534351caa375c30"><param name="Name" value="admin::ResultBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a4028b20aae7962ee093b38c5b3e4517a"><param name="Name" value="history::HistoryBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#ac5f11c145a3b4a73c97f82bdc3beb07d"><param name="Name" value="loan::LoanBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#a6036d909edae5c3d94b39e336d0a876e"><param name="Name" value="close"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#ad65015a1752e59008591e77363cdea85"><param name="Name" value="connect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_controller_servlet.html#a72f312942007f269cbaf4d86fdd0df36"><param name="Name" value="ControllerServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html"><param name="Name" value="DBconnect::DBconnect"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#a6036d909edae5c3d94b39e336d0a876e"><param name="Name" value="close"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#ad65015a1752e59008591e77363cdea85"><param name="Name" value="connect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#aad4e1274e0184b62c3e1c3dca1cf3563"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#a57b8b689cdd7c5c8847f1217365770be"><param name="Name" value="query"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#af39df1d2d107724daeceb6c8585f521a"><param name="Name" value="res"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#a3649fbeed1ca73503f4c4fe64ec6224f"><param name="Name" value="update"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#adbc63c3d39dcf577c95795457718f95e"><param name="Name" value="doGet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#adbc63c3d39dcf577c95795457718f95e"><param name="Name" value="admin::AddServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_check_loan_servlet.html#abbe0557187c93d0e806e751add7e5daf"><param name="Name" value="admin::CheckLoanServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_controller_servlet.html#a6b5c24ed500d5a4d110e5cb698187742"><param name="Name" value="admin::ControllerServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_servlet.html#a58774982d5e6398cb6d3016f1b652c22"><param name="Name" value="admin::ModifyServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_remove_servlet.html#abeaea85014c5e6cb6eded135ebb1cdec"><param name="Name" value="admin::RemoveServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_return_servlet.html#a05243ac40e544c80bebc6ccc3af310e3"><param name="Name" value="admin::ReturnServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#af33243d76918c14089eccbc1ca0fbf3a"><param name="Name" value="admin::SearchServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_advanced_search_servlet.html#a63c9f9ecb57ff999b13b4ef46764fe39"><param name="Name" value="advanced::AdvancedSearchServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_all_book_servlet.html#a254894253935322173402de169c7d647"><param name="Name" value="advanced::AllBookServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_recommend_servlet.html#a053694ba555f8bad9dbb25f3f93326fc"><param name="Name" value="advanced::RecommendServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_request_servlet.html#a56fd652c4380a401d80754ca12cdbbbc"><param name="Name" value="advanced::RequestServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classlogin_1_1_login_servlet.html#a983f5828fbf3bb2e11488db56fd2e4e2"><param name="Name" value="login::LoginServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#a1297b03c40f87a6dff6f3042448583f6"><param name="Name" value="doPost"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_add_servlet.html#a1297b03c40f87a6dff6f3042448583f6"><param name="Name" value="admin::AddServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_check_loan_servlet.html#a680e6d567885728b517df79471541ccb"><param name="Name" value="admin::CheckLoanServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_controller_servlet.html#a2c99bb089d8be48e13466b5e5f8c2f95"><param name="Name" value="admin::ControllerServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_servlet.html#a84c3c7bb3f9338a98c39c19557847422"><param name="Name" value="admin::ModifyServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_remove_servlet.html#a9d4e3b4e08640f72088a481aeb264c9a"><param name="Name" value="admin::RemoveServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_return_servlet.html#af2c1e5273df5b6516d9e5f2c61b26eff"><param name="Name" value="admin::ReturnServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#a9183bb5f24ea47c4b159e836e84990d8"><param name="Name" value="admin::SearchServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_advanced_search_servlet.html#add42de3b72bf474b9462538d39a4f346"><param name="Name" value="advanced::AdvancedSearchServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_all_book_servlet.html#a8a5a865de4a130dc91e8354b1a4887ca"><param name="Name" value="advanced::AllBookServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_recommend_servlet.html#af15682cbfbf5f21594538f20d8a8f450"><param name="Name" value="advanced::RecommendServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_request_servlet.html#acd5fa3621347affb7135a9a44853265f"><param name="Name" value="advanced::RequestServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classlogin_1_1_login_servlet.html#a64cfb5af5fdfe51e081b7004a54b1404"><param name="Name" value="login::LoginServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#a2f0982074f549dbe0411b96913d596e3"><param name="Name" value="get"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#aef1625745802811d0d717bddcf79a858"><param name="Name" value="getBookInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#aef1625745802811d0d717bddcf79a858"><param name="Name" value="admin::ModifyBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#ae66608c4f577b70115f257f75551098f"><param name="Name" value="history::HistoryBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#ac59567271b218b8a6a59eb7723964f64"><param name="Name" value="loan::LoanBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a1edb15b8795b61fb1c3869473dc4fd65"><param name="Name" value="getID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#a8f9b02014a757b0156d353eff6e2f4c0"><param name="Name" value="getRow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a9d05f9cc6dad82412af5888c9e694a12"><param name="Name" value="getRowNum"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a9d05f9cc6dad82412af5888c9e694a12"><param name="Name" value="history::HistoryBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a877dd9a33be3fb24db21e31977e4330c"><param name="Name" value="loan::LoanBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html"><param name="Name" value="history::HistoryBean"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a4028b20aae7962ee093b38c5b3e4517a"><param name="Name" value="clear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#ae66608c4f577b70115f257f75551098f"><param name="Name" value="getBookInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a9d05f9cc6dad82412af5888c9e694a12"><param name="Name" value="getRowNum"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#ad8f46a0ae1fb61150f32009ce9883693"><param name="Name" value="isLoaded"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#ac709fce9384d1ee0e1352383e5531f4d"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a8c40038ea495990a54d7f3bcfae304d7"><param name="Name" value="setBookInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#aa599d648e48b45d460b0e64e84c6bb3a"><param name="Name" value="setUserID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a504e0ce1bcef8665104cd2c7f2a92a90"><param name="Name" value="isLoad"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#ad8f46a0ae1fb61150f32009ce9883693"><param name="Name" value="isLoaded"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#ad8f46a0ae1fb61150f32009ce9883693"><param name="Name" value="history::HistoryBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#af8b0094d96ab6a310c078fcc93f5de50"><param name="Name" value="loan::LoanBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a0854744826c47dc16b1d49d0f9b02e59"><param name="Name" value="loadBookInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html"><param name="Name" value="loan::LoanBean"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#ac5f11c145a3b4a73c97f82bdc3beb07d"><param name="Name" value="clear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#ac59567271b218b8a6a59eb7723964f64"><param name="Name" value="getBookInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a877dd9a33be3fb24db21e31977e4330c"><param name="Name" value="getRowNum"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#af8b0094d96ab6a310c078fcc93f5de50"><param name="Name" value="isLoaded"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a7c98ca3abd92ebc7dde7117c1b9471d7"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a7c80ca228be4bd4438e4a4bef40dc0d0"><param name="Name" value="setBookInfo"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a38f9f0a750e55cd377d34f5b9c4a9c0b"><param name="Name" value="setUserID"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classlogin_1_1_login_servlet.html"><param name="Name" value="login::LoginServlet"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classlogin_1_1_login_servlet.html#a983f5828fbf3bb2e11488db56fd2e4e2"><param name="Name" value="doGet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classlogin_1_1_login_servlet.html#a64cfb5af5fdfe51e081b7004a54b1404"><param name="Name" value="doPost"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classlogin_1_1_login_servlet.html#af8c37b0240335c1641b25c63522a974d"><param name="Name" value="LoginServlet"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classlogin_1_1_login_servlet.html#af8c37b0240335c1641b25c63522a974d"><param name="Name" value="LoginServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a9966a4574bc56a7b121596ec3a8e1400"><param name="Name" value="main"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a9966a4574bc56a7b121596ec3a8e1400"><param name="Name" value="admin::ModifyBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#abdd3c9d14bbec8d48297f82376e3892c"><param name="Name" value="admin::ResultBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#a28154723497a97fdf737746ffdf234e8"><param name="Name" value="admin::SearchServlet"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#aad4e1274e0184b62c3e1c3dca1cf3563"><param name="Name" value="DBconnect::DBconnect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#ac709fce9384d1ee0e1352383e5531f4d"><param name="Name" value="history::HistoryBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a7c98ca3abd92ebc7dde7117c1b9471d7"><param name="Name" value="loan::LoanBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_servlet.html#a8afe56ea4faeb9511cdf1ad20497e3bc"><param name="Name" value="ModifyServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#a57b8b689cdd7c5c8847f1217365770be"><param name="Name" value="query"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_recommend_servlet.html#a0b65a3f29a28d30346b9478aab2fccb6"><param name="Name" value="RecommendServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_remove_servlet.html#a4a37e587d1e6d20307aec984fbccb9e5"><param name="Name" value="RemoveServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadvanced_1_1_request_servlet.html#ac03b771e0d06eb69766ac2df52cb5f2f"><param name="Name" value="RequestServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#af39df1d2d107724daeceb6c8585f521a"><param name="Name" value="res"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_return_servlet.html#a855b49f16845178a877261f45279927c"><param name="Name" value="ReturnServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_search_servlet.html#ab50b346d5eff83597546471d03831aa5"><param name="Name" value="SearchServlet"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a2452b17b38f39a9cfd782c30979024b5"><param name="Name" value="set"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_modify_bean.html#a2452b17b38f39a9cfd782c30979024b5"><param name="Name" value="admin::ModifyBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classadmin_1_1_result_bean.html#acc0c90d9819dc46c4429216072ecb701"><param name="Name" value="admin::ResultBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a8c40038ea495990a54d7f3bcfae304d7"><param name="Name" value="setBookInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#a8c40038ea495990a54d7f3bcfae304d7"><param name="Name" value="history::HistoryBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a7c80ca228be4bd4438e4a4bef40dc0d0"><param name="Name" value="loan::LoanBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#aa599d648e48b45d460b0e64e84c6bb3a"><param name="Name" value="setUserID"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classhistory_1_1_history_bean.html#aa599d648e48b45d460b0e64e84c6bb3a"><param name="Name" value="history::HistoryBean"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classloan_1_1_loan_bean.html#a38f9f0a750e55cd377d34f5b9c4a9c0b"><param name="Name" value="loan::LoanBean"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_d_bconnect_1_1_d_bconnect.html#a3649fbeed1ca73503f4c4fe64ec6224f"><param name="Name" value="update"></OBJECT>
+</UL>
+</BODY>
+</HTML>

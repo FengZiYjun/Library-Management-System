@@ -60,7 +60,7 @@ public class SearchServlet extends HttpServlet {
 			sql = sql + " " + where;
 		}
 		sql = sql + ";";
-		System.out.println(sql);
+		System.out.println("SearchServlet query: " + sql);
 		
 		DBconnect con = new DBconnect();
 		con.connect();
@@ -78,6 +78,7 @@ public class SearchServlet extends HttpServlet {
 			int col_num = info_name.length;
 			String[][] book_info = new String[row_num][col_num];
 			
+			ResultBean.clear();
 			for(int i=0;res.next();i++){
 				// load book_id into ResultBean
 				ResultBean.set(res.getString("book_id"));

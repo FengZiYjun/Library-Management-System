@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import admin.ModifyBean;
+import admin.ResultBean;
+
 /**
  * Servlet implementation class LogoutServlet
  */
@@ -35,6 +38,8 @@ public class LogoutServlet extends HttpServlet {
 		person.clear();
 		LoanBean.clear();
 		HistoryBean.clear();
+		ResultBean.clear();
+		ModifyBean.clear();
 		// redirect to index
 		response.sendRedirect("index.jsp");
 	}

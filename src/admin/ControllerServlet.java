@@ -45,6 +45,7 @@ public class ControllerServlet extends HttpServlet {
 	
 		if(s % 2 == 0){
 			String book_id = ResultBean.get(row);
+			ResultBean.clear();
 			System.out.println("ctrl output book_id: " + book_id);
 			request.setAttribute("book_id", book_id);
 			request.getRequestDispatcher("/admin-modify.jsp").forward(request, response);

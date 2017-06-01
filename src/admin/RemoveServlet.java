@@ -38,8 +38,6 @@ public class RemoveServlet extends HttpServlet {
 		int row = (int) session.getAttribute("row");
 		
 		String book_id = ResultBean.get(row);
-		//System.out.println(book_id);
-		
 		ResultBean.clear();
 		
 		DBconnect con = new DBconnect();

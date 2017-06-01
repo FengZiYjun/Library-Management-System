@@ -63,7 +63,7 @@
 
         <li><a href="http://localhost:8080/LibraryManageSystem/AllBookServlet" class="am-text-success"><span class=" am-icon-book am-icon-sm"></span><br>All Books<br></a></li>
         <li><a href="http://localhost:8080/LibraryManageSystem/Advanced-search.jsp" class="am-text-warning"><span class=" am-icon-search am-icon-sm"></span><br>Search<br></a></li>
-        <li><a href="#" class="am-text-danger"><span class=" am-icon-magic am-icon-sm"></span><br>Recommendation<br></a></li>
+        <li><a href="http://localhost:8080/LibraryManageSystem/RecommendServlet" class="am-text-danger"><span class=" am-icon-magic am-icon-sm"></span><br>Recommendation<br></a></li>
       	
       </ul>
 		<br>
