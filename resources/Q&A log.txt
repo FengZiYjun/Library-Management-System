@@ -1,0 +1,178 @@
+Q&A: 找不到javac命令只是因为错吧把jre当成jdk,jdk一定有javac的。
+
+javabean要搞清楚：知道了MVC模式老朋友分别对应javabean(model), jsp(view), serlvet(controller)
+
+要打开tomcat，在任务管理器的服务一栏，已经设为自动开启，否则无法访问网页。
+（但会不会有占用问题？以前出现过的）
+
+jsp文件同一放在WebContent目录下，不进入二级目录，所以jsp的图标在package explorer中是和WEB_INF和META_INF对齐的，它们是同一级的。
+
+关于javabean的使用<jsp:usebean id="name" class="address">中的address，如果是一个经过javac命令编译后得到的.class文件，他应该放在WebContent/WEB-INF/classes/com/runoob，那么address就是com.runoob.classname，因为jsp:usebean会检索到WEB-INF的classes目录。
+---address从WEB-INF/classes开始检索？是的。
+
+18:32 2017/5/12
+---javabean结合jdbc访问数据库失败，问题可能处在bean身上，老是登录失败返回空值，至今错误没有排除。
+bean的使用需要把编译后的.class文件放在WEB-INF的classes目录下（不一定要这样做，可以直接放在src里面，address就是src下的）
+
+servlet控制页面跳转，用println写网页很令人惊讶。（所以JSP更方便，允许JAVA嵌套HTML）
+XML文件是用来干嘛的？
+
+---tomcat为什么用着用着就死掉了？delete之后再新建一个就好了。
+
+16:33 2017/5/17
+beanToDatabase返回的resultSet总是空值，查不到到东西？
+
+----JavaBean要使用JDBC？看到两种javaBean的设计，不知道follow谁？是否加extend Serious...的区别
+自己设计JDBC和javaBean结合
+
+----为什么.class文件放进classes/mybean中没有显示出来？刷新一下就好了
+
+----request sources not available? 未知错误找不到请求源？
+jsp文件同一放在WebContent目录下!!!
+
+“不幸的是，bean 和 JDBC 之间的集成根本不是无缝的”
+
+bean和JDBC集成之后，老是访问数据库失败。
+----当我把连接部分分离除去构成函数之后就不能连接了？变量作用域问题！
+不是？只能在同一个代码块，连接部分不能分块！！！？
+不，Class.forName("com.mysql.jdbc.Driver");不能在函数中，它的作用域不能在函数中。
+
+----新型错误：No suitable driver found for jdbc:mysql://localhost:3306/db-book?useSSL=true
+重大突破：把sql.connector.tar放到WEB-INF/lib
+
+----错误：operation not allowed after ResultSet closed.
+       解决：把statement和connection的close独立出来，放到resultset操作的后面。
+
+11:40 2017/5/18
+登录页面应该用html写或者直接在servlet上写，怎么可能同时？
+servlet上的输出html语句把tomcat搞垮了！
+tomcat全面崩溃？！
+---一旦找不到source就会崩掉，检查地址
+
+15:51 2017/5/19
+IE浏览器奇怪地崩溃了，但是chrome没事，eclipse内置浏览器默认采用IE，所以也崩掉了。
+改用chrome为默认浏览器就可以了。
+
+但是运行servlet依然含有问题，有些运行不起来。
+用chrome打开servlet会把html标签打出来？？？！servlet的PrintWriter会直接输出？
+
+记得多多restart!!!
+
+chrome重大问题：无法更新我的修改！！！
+IE可以直接打开html但是无法跟servlet交互！！？
+
+已重置IE，等待重启生效。。。
+内置浏览器已经正常运转，但是servlet控制的登录模块依然不成功。
+
+---servlet跳转不成功是因为修改原来的servlet时忘了修改@WebServlet("/login")这里的表示，导致页面不一致，无法访问，产生source not found 的错误。
+
+9:49 2017/5/20
+testServlet测试成功！！！
+我决定不使用servlet来显示html，servlet只需要专注于业务逻辑的跳转，jsp和html负责前端页面。
+
+JDBCbean的设计更新：成功实现connect和query的分离，控制权抽象出来交给servlet.
+
+github成功连接！
+
+16:30 2017/5/20
+用户登录模块成功！实现前端到数据库用户信息验证！
+
+数据库初步设计完成。
+powerdesigner生成的SQL语句有点奇怪？？怎么处理联系集？
+
+导入amazeui前端框架！
+
+18:07 2017/5/21
+大问题：怎样以非form形式从jsp调用servlet？或者用form怎样返回非input参数？
+为什么<servlet></servlet>标记是unknown的？
+
+jsp放在WEB-INF中可以隐藏起来，不能直接访问，但是跳转之后not available?
+
+servlet用来跳转，javabean用来储存静态数据？
+servlet和jsp之间的数据传输只能发生在页面跳转，无法jsp自动加载servlet。
+
+使用javabean调用DBconnect不成功，resultSet返回空值。
+
+多多用main做单元测试！！论单元测试的重要性！！！
+
+DBconnect出问题了。
+----不，一个问题：ResultSet的get访问之前需要用next判断一下！！！
+
+
+如果eclipse卡机强制关闭，会导致旧的server没有正常关闭依然后台运行，新的server端口被占用。
+只能重新启动了。
+
+尝试两种方法实现从servlet到jsp的自动输出，
+一种是strut框架，在jsp页面中直接调用Action，-----试验不成功
+一种是jsp的forword标签（通过request发送参数）------不实用
+
+17:11 2017/5/22
+数据库准备工作全部完成，测试数据已经全部准备。
+powerdesigner的用法：使用ConceptualModel设计完之后要ctrl+G生成物理模型，物理模型再生成sql和测试数据。
+经历一番挣扎：follow its design.
+维持当前数据库，不要修改了，只能在add中添加。
+
+21:29 2017/5/23
+borrow_time的谜团
+为了解决borrow_time的诡异（物理模型很难修改）
+加上copy，考虑借阅是多对多的联系。不，会很麻烦！！！
+
+最后确立的模型应该是很方便查询的。
+
+13:40 2017/5/24
+登出时需要使得ui.jsp的getUerID()返回值为空，下一次登录才会读取新的用户信息。
+记得做这件事。clearAllBean()
+
+完成loan和history
+
+通过forword实现了jsp唤起servlet页面跳转，但是url不会变？
+
+打算使用servlet处理登出，点击logout之后唤起servlet然后调用bean的clear方法，最后定向到index
+问题在于：
+怎样在点击之后唤起sevlet？
+servlet怎样调用到bean方法？
+
+试验： 使用url启动servlet——成功！
+一种可能的方法： 把bean的所有成员变量设为static，并将clear设为static方法，使得类变量可以被全部实例共享。
+以上方法成功！
+
+实现登录登出！
+不，有问题，一旦刷新就没法重载？isloaded还要改？
+改好了。
+
+8:25 2017/5/26
+怎样修改？
+input的value可以在框内显示文字。
+修改之后重新提交，比对每一个表项，把修改的重新update
+
+怎样删除？
+直接获取id传给数据库刷新页面
+
+关键在于怎样获取每一行的id
+我找不到以非表单形式提交参数的方法，input和submit只能一起用？
+
+另一种方法是用bean保存静态数据id，一个result对应一个bean，从button传一个参数到sevlet，servlet从bean获取具体id，进行操作。
+
+找到方法：使用hidden和submit配合向sevlet传递参数。
+
+servlet之间传递参数试验成功！
+
+问题：admin-result向controller提交的signal总是0，多个submit hidden只认第一个？
+用javasript?可能是一条出路。
+试验成功了。借助javascript走得通。
+
+remove成功！！！
+
+modify需要重启服务器才能 刷新？
+因为javabean的scope是session, 会一直停留在服务器，所以要换成request就可以了。
+scope="request"bean脚本变量在新的request来时会刷新重载，生命周期是request?
+
+得不到book_id?
+
+admin-result的信息次序有错，待改正。
+
+
+
+
+
+
