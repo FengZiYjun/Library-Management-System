@@ -1,4 +1,3 @@
-<%@page import="admin.ResultBean"%>
 <html class="no-js">
 <head>
 <meta charset="utf-8">
@@ -9,12 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp">
-<link rel="icon" type="image/png" href="assets/i/favicon.png">
+<link rel="icon" type="image/png" href="../assets/i/favicon.png">
 <link rel="apple-touch-icon-precomposed"
-	href="assets/i/app-icon72x72@2x.png">
+	href="../assets/i/app-icon72x72@2x.png">
 <meta name="apple-mobile-web-app-title" content="Amaze UI">
-<link rel="stylesheet" href="assets/css/amazeui.min.css">
-<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="stylesheet" href="../assets/css/amazeui.min.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 <body>
 
@@ -78,8 +77,7 @@
 			<div class="admin-content-body">
 				<div class="am-cf am-padding am-padding-bottom-0">
 					<div class="am-fl am-cf">
-						<strong class="am-text-primary am-text-lg">Modify</strong> / <small>the
-							information of a book</small>
+						<strong class="am-text-primary am-text-lg">Search</strong> / <small>from the library</small>
 					</div>
 				</div>
 
@@ -96,24 +94,16 @@
 								<div class="am-u-sm-12 am-u-md-4 am-u-md-push-8"></div>
 
 								<div class="am-u-sm-12 am-u-md-8 am-u-md-pull-4">
-									<form action="ModifyServlet" method="post"
-										class="am-form am-form-horizontal">			
-								
-										<jsp:useBean id="bean" scope="request" class="admin.ModifyBean">
-										<%
-											String book_id = (String)request.getAttribute("book_id");
-											System.out.println("book_id: " + book_id);
-											bean.set(book_id);
-											bean.loadBookInfo();
-											
-										%>			
-
+									<form action="SearchServlet" method="post"
+										class="am-form am-form-horizontal am-smooth-scroll">
+										
 										<div class="am-form-group">
 											<label for="user-name" class="am-u-sm-3 am-form-label">Book
 												ID </label>
 											<div class="am-u-sm-9">
-												<%=book_id %> <br>
-												<small>The unique book identity number.</small>
+												<input type="text" name="book_id"
+													placeholder="Book ID "> <small>The unique
+													book identity number.</small>
 											</div>
 										</div>
 
@@ -121,7 +111,7 @@
 											<label for="user-email" class="am-u-sm-3 am-form-label">Title
 											</label>
 											<div class="am-u-sm-9">
-												<input type="text" name="title" value=<%=bean.getBookInfo("title") %>>
+												<input type="text" name="title" placeholder="Title">
 												<small></small>
 											</div>
 										</div>
@@ -130,7 +120,7 @@
 											<label for="user-phone" class="am-u-sm-3 am-form-label">Author
 											</label>
 											<div class="am-u-sm-9">
-												<input type="text" name="author" value=<%=bean.getBookInfo("author") %>>
+												<input type="text" name="author" placeholder="Author">
 											</div>
 										</div>
 
@@ -139,16 +129,16 @@
 											</label>
 											<div class="am-u-sm-9">
 												<input type="text" name="publisher"
-													value=<%=bean.getBookInfo("publisher") %>>
+													placeholder="Enter Publisher">
 											</div>
 										</div>
 
 										<div class="am-form-group">
-											<label for="user-weibo" class="am-u-sm-3 am-form-label">Publish
-												Year </label>
+											<label for="user-weibo" class="am-u-sm-3 am-form-label">Publish Year
+											</label>
 											<div class="am-u-sm-9">
 												<input type="text" name="publish_year"
-													value=<%=bean.getBookInfo("publish_year") %>>
+													placeholder="Publish Year">
 											</div>
 										</div>
 
@@ -156,16 +146,15 @@
 											<label for="user-weibo" class="am-u-sm-3 am-form-label">ISBN
 											</label>
 											<div class="am-u-sm-9">
-												<input type="text" name="ISBN" value=<%=bean.getBookInfo("ISBN") %>>
+												<input type="text" name="ISBN" placeholder="ISBN">
 											</div>
 										</div>
 
 										<div class="am-form-group">
-											<label for="user-weibo" class="am-u-sm-3 am-form-label">Call
-												Num </label>
+											<label for="user-weibo" class="am-u-sm-3 am-form-label">Call Num </label>
 											<div class="am-u-sm-9">
 												<input type="text" name="call_number"
-													value=<%=bean.getBookInfo("call_number") %>>
+													placeholder="Call Number">
 											</div>
 										</div>
 
@@ -173,16 +162,14 @@
 											<label for="user-weibo" class="am-u-sm-3 am-form-label">Tag
 											</label>
 											<div class="am-u-sm-9">
-												<input type="text" name="tag" value=<%=bean.getBookInfo("tag") %>>
+												<input type="text" name="tag" placeholder="Tag">
 											</div>
 										</div>
-										
-										</jsp:useBean>
 
 										<div class="am-form-group">
 											<div class="am-u-sm-9 am-u-sm-push-3">
 												<input type="submit" class="am-btn am-btn-primary"
-													value="Confirm">
+													value="Search">
 											</div>
 										</div>
 									</form>
@@ -226,10 +213,10 @@
 <![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]><!-->
-	<script src="assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
 	<!--<![endif]-->
-	<script src="assets/js/amazeui.min.js"></script>
-	<script src="assets/js/app.js"></script>
+	<script src="../assets/js/amazeui.min.js"></script>
+	<script src="../assets/js/app.js"></script>
 
 
 

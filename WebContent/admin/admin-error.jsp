@@ -8,12 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp">
-<link rel="icon" type="image/png" href="assets/i/favicon.png">
+<link rel="icon" type="image/png" href="../assets/i/favicon.png">
 <link rel="apple-touch-icon-precomposed"
-	href="assets/i/app-icon72x72@2x.png">
+	href="../assets/i/app-icon72x72@2x.png">
 <meta name="apple-mobile-web-app-title" content="Amaze UI">
-<link rel="stylesheet" href="assets/css/amazeui.min.css">
-<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="stylesheet" href="../assets/css/amazeui.min.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 <body>
 	<!--[if lte IE 9]>
@@ -124,10 +124,10 @@
 <![endif]-->
 
 	<!--[if (gte IE 9)|!(IE)]><!-->
-	<script src="assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
 	<!--<![endif]-->
-	<script src="assets/js/amazeui.min.js"></script>
-	<script src="assets/js/app.js"></script>
+	<script src="../assets/js/amazeui.min.js"></script>
+	<script src="../assets/js/app.js"></script>
 
 
 </body>

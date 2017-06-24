@@ -42,14 +42,15 @@ public class LoginServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		String user_id = request.getParameter("username");
 		String password = request.getParameter("password");
 		try {
 			if(loginCL(user_id,password)){ 
 				// need to improve to support more administrators
 				if(user_id.equals("000")){
-					request.getRequestDispatcher("/administrator.jsp").forward(request, response);
+					//request.getRequestDispatcher("/WEB-INF/admin/administrator.jsp").forward(request, response);
+					response.sendRedirect("admin/administrator.jsp");
 				}else{
 					request.setAttribute("id", user_id);
 					request.getRequestDispatcher("/ui.jsp").forward(request, response);
