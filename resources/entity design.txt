@@ -1,0 +1,52 @@
+图书馆管理系统：library management system
+
+Basic functions: 
+Users can 
+(view)
+- personal information  (done)
+- view all book information 
+- view loan books  (done)
+- view borrow history  (done)
+- begin search
+- get recommandation
+
+(operate)
+- check out books
+- return books
+- modified password
+
+(front page actions)
+- register a new account
+- login  (done)
+- log out
+
+(administrator)
+- add book info
+- delete book info 
+- query book 
+- modify book info 
+
+
+-----physical model
+user(user_id, user_name, email， password)
+book(book_id,  user_id(can null ), title, publisher, author, publish_year, tag,ISBN, call_number)
+history(user_id, book_id, borrow_time, return_time)
+loan(user_id, book_id,borrow_time)
+tag
+author
+publisher
+publish_year
+
+
+---entity:  
+user(user_id, user_name, email， password)
+
+book(book_id, user_id, ISBN, call_number, title, publisher, author, publish_year, tag)
+
+---relationship:
+
+borrow: basket & book  one to many 
+borrow(basket_id,  book_no,  borrow_time)
+
+history:  user & book  one to many
+history(user_id, book_no, title, borrow_time, return_time)
