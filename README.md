@@ -1,13 +1,11 @@
 # Library-Management-System
 
-=====
-
 [![Build Status](https://travis-ci.org/dmlc/mxnet.svg?branch=master)](https://github.com/FengZiYjun/Library-Management-System/)
 [![Documentation Status](https://readthedocs.org/projects/mxnet/badge/?version=latest)](https://github.com/FengZiYjun/Library-Management-System/)
 [![GitHub license](http://dmlc.github.io/img/apache2.svg)](./LICENSE)
 
 
-A web database project by JavaEE
+A web-based intergrated system for publication information management.
 
 
 What's New
