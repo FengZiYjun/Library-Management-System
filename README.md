@@ -6,8 +6,6 @@
 [![Documentation Status](https://readthedocs.org/projects/mxnet/badge/?version=latest)](https://github.com/FengZiYjun/Library-Management-System/)
 [![GitHub license](http://dmlc.github.io/img/apache2.svg)](./LICENSE)
 
-![banner](https://raw.githubusercontent.com/dmlc/web-data/master/mxnet/image/banner.png)
-
 
 A web database project by JavaEE
 
